@@ -1,14 +1,11 @@
 
 import React, { useState, useEffect } from 'react'
 import './App.css'
-import { Formik, Form, Field, ErrorMessage } from "formik"
 import * as yup from "yup"
 import Axios from 'axios';
 import { ConstructionOutlined } from '@mui/icons-material';
-import List from './components/List';
+//import List from './components/List';
 import axios from 'axios';
-
-
 
 
 function App() {    
@@ -47,7 +44,7 @@ function App() {
         onChange={handleChangeValues} /*value = {this.state.produto}*//>
         <button className='register--button' onClick={handleClickButtom}>Adicionar</button>       
       </div>    
-      <List/>
+      
     </div>
   )
 }
