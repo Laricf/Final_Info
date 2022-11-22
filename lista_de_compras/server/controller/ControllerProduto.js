@@ -1,6 +1,7 @@
 const mysql = require("mysql2/promise")
 const cors = require("cors")
-const { appBarClasses } = require("@mui/material")
+
+
  
 
 var db = mysql.createPool({
@@ -23,10 +24,11 @@ module.exports = {
     },
 
     async delete(req, res){
-        let datas = req.body;
-
+        let datas = req.body.idmercado;        
+        
+        console.log(datas)
         try {
-            const response = await db.query('DELETE FROM mercado SET ?', [datas]);
+            const response =  await db.query(`DELETE FROM mercado WHERE idmercado = ${datas}`);
             res.json(response)            
         } catch (error) {            
             console.log(error);

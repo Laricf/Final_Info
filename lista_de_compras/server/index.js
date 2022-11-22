@@ -11,7 +11,7 @@ const ControllerUsers = require("./controller/ControllerProduto");
 
 app.post('/produto/insert',      ControllerUsers.insert);
 app.delete('/produto/delete',    ControllerUsers.delete);
-app.get('produto/find',               ControllerUsers.find)
+app.get('/produto/find',         ControllerUsers.find)
 
 
 
