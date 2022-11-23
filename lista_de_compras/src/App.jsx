@@ -30,6 +30,18 @@ function App() {
   useEffect (() => {
     axios.get("http://localhost:3001/produto/find")
   })
+
+  const ClickDelete = () => {
+    Axios.post("http://localhost:3001/produto/delete", {
+      produto:values.produto,
+    }).then((response) => {
+      console.log(response)
+    })        
+  }
+
+  useEffect (() => {
+    axios.get("http://localhost:3001/produto/delete")
+  })
   
   return ( 
     <div className="App">  
@@ -42,7 +54,8 @@ function App() {
         placeholder='O que eu desejo?'
         className='register--input'
         onChange={handleChangeValues} /*value = {this.state.produto}*//>
-        <button className='register--button' onClick={handleClickButtom}>Adicionar</button>       
+        <button className='register--button' onClick={handleClickButtom}>Adicionar</button> 
+        <button className='delete'>Deletar</button>      
       </div>    
       
     </div>

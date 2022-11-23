@@ -24,11 +24,11 @@ module.exports = {
     },
 
     async delete(req, res){
-        let datas = req.body.idmercado;        
+        let datas = req.body.produto;
         
         console.log(datas)
         try {
-            const response =  await db.query(`DELETE FROM mercado WHERE idmercado = ${datas}`);
+            const response =  await db.query(`DELETE FROM mercado WHERE produto = '${datas}'`);           
             res.json(response)            
         } catch (error) {            
             console.log(error);
