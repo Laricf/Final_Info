@@ -3,7 +3,7 @@ import Axios from 'axios';
 import { Button, Paper, TextField } from '@mui/material';
 
 
-export default function Form() {
+export default function Form({ tobuyHandler }) {
 
   const [values, setValues] = useState();  
 
@@ -31,7 +31,7 @@ export default function Form() {
     <Paper style={{ padding: "1em", borderRadius: "10px" }}>
         <div style={{ display:"flex", justifyContent: "center"}}>
             <TextField id="outlined-basic" name='produto' label="Item" variant="outlined" onChange={handleChangeValues} fullWidth />
-            <Button variant="text" onClick={handleClickButtom}>ADD</Button>
+            <Button variant="text" onClick={handleClickButtom} >ADD</Button>
         </div>
     </Paper>   
   )
