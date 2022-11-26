@@ -7,13 +7,19 @@ import ListItemText from '@mui/material/ListItemText';
 import Checkbox from '@mui/material/Checkbox';
 import IconButton from '@mui/material/IconButton';
 import CommentIcon from '@mui/icons-material/Comment';
+import { Paper } from '@mui/material';
+import DeleteIcon from '@mui/icons-material/Delete';
+
 
 export default function BuyList() {  
   return (
+  <Paper style={{ borderRadius: "10px" }}>
+
+   
     <ListItem      
       secondaryAction={
         <IconButton edge="end" aria-label="comments">
-          <CommentIcon />
+          <DeleteIcon />
         </IconButton>
       }
       disablePadding
@@ -29,5 +35,6 @@ export default function BuyList() {
         <ListItemText primary={`Line item`}/>
       </ListItemButton>
     </ListItem>
+  </Paper>
   );
 }

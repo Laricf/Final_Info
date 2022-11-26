@@ -28,7 +28,7 @@ export default function Form() {
  
 
   return (           
-    <Paper style={{ padding: "1em" }}>
+    <Paper style={{ padding: "1em", borderRadius: "10px" }}>
         <div style={{ display:"flex", justifyContent: "center"}}>
             <TextField id="outlined-basic" name='produto' label="Item" variant="outlined" onChange={handleChangeValues} fullWidth />
             <Button variant="text" onClick={handleClickButtom}>ADD</Button>
