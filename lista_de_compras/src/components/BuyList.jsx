@@ -26,7 +26,7 @@ export default function BuyList() {
             disableRipple           
           />
         </ListItemIcon>
-        <ListItemText/>
+        <ListItemText primary={`Line item`}/>
       </ListItemButton>
     </ListItem>
   );
