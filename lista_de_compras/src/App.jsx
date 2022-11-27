@@ -10,7 +10,7 @@ import Home from './pages/Home';
 
 function App() {    
 
-  /*const [values, setValues] = useState();  
+  const [values, setValues] = useState();  
 
   const handleChangeValues = (value) => {
     setValues((prevValue) => ({
@@ -25,6 +25,7 @@ function App() {
     }).then((response)=>{
       console.log(response)
     })
+    
   }
    
   useEffect (() => {
@@ -41,7 +42,7 @@ function App() {
 
   useEffect (() => {
     axios.get("http://localhost:3001/produto/delete")
-  })*/
+  })
   
   return ( 
     <div className="App">    
@@ -53,8 +54,8 @@ function App() {
             name='produto'
             placeholder='O que eu desejo?'
             className='register--input'
-            /*onChange={handleChangeValues}*/ /*value = {this.state.produto}*//>
-            <button className='register--button' /*onClick={handleClickButtom}*/>Adicionar</button>
+            onChange={handleChangeValues} /*value = {this.state.produto}*//>
+            <button className='register--button' onClick={handleClickButtom}>Adicionar</button>
             <button className='delete'>Deletar</button>
           </div>                    
     </div>

@@ -3,9 +3,16 @@ import Axios from 'axios';
 import { Button, Paper, TextField } from '@mui/material';
 
 
-export default function Form({ tobuyHandler }) {
+export default function Form({ addTobuy, deleteTobuy }) {
 
-  const [values, setValues] = useState();  
+  const [values, setValues] = useState(); 
+  const [id, setId]  = useState(0)
+
+  const tobuyCreate = (values) => {
+    const tobuyObj = {values: values, id: id};
+    setId(id + 1);
+    addTobuy(tobuyObj);
+  }
 
   const handleChangeValues = (value) => {
     setValues((prevValue) => ({
@@ -30,8 +37,14 @@ export default function Form({ tobuyHandler }) {
   return (           
     <Paper style={{ padding: "1em", borderRadius: "10px" }}>
         <div style={{ display:"flex", justifyContent: "center"}}>
-            <TextField id="outlined-basic" name='produto' label="Item" variant="outlined" onChange={handleChangeValues} fullWidth />
-            <Button variant="text" onClick={handleClickButtom} >ADD</Button>
+            <TextField 
+            id="outlined-basic" 
+            name='produto' 
+            label="Item" 
+            variant="outlined" 
+            onChange={(e) => setValues(e.target.value)} 
+            fullWidth />
+            <Button variant="text" /*onClick={handleClickButtom}*/ onClick={() => tobuyCreate(values)} >ADD</Button>
         </div>
     </Paper>   
   )

@@ -6,23 +6,27 @@ import BuyList from '../components/BuyList';
 
 export default function Home() {
 
-    /*const [tobuys, setTobuys] = useState([]);
+    const [tobuys, setTobuys] = useState([]);
 
-    const tobuyHandler = (tobuy) => {
-        console.log(tobuy)
-        //setTodos([...tobuys, tobuy]);
-    }*/
+    const addTobuy = (tobuy) => {
+        console.log(tobuy);
+        setTobuys([...tobuys, tobuy]);
+    };
+
+    const deleteTobuy = (id) => {
+        console.log(id)
+    }
 
   return (
     <Container maxWidth="xs" style={{ marginTop: "1em" }}>
-        <Form /*tobuyHandler={tobuyHandler}*/ />
+        <Form addTobuy={addTobuy} />
         <List sx={{ marginTop: "1em" }}>
-            {/*{todos.map( (todo) => ( 
-                <div style={{ marginTop: "1em" }}>
-                    <BuyList/> 
+            {tobuys.map((tobuy) => ( 
+                <div key={tobuy.id} style={{ marginTop: "1em" }}>
+                    <BuyList tobuy={tobuy} deleteTobuy={deleteTobuy}/>
                 </div>
-            ))}       */}     
-            <BuyList/>
+            ))}     
+            {/*<BuyList/> */}
         </List>                 
     </Container> 
   )

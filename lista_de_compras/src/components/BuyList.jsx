@@ -11,14 +11,13 @@ import { Paper } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 
-export default function BuyList() {  
+export default function BuyList({ tobuy, deleteTobuy} ) {  
   return (
-  <Paper style={{ borderRadius: "10px" }}>
-
+  <Paper style={{ borderRadius: "10px", padding: "0.5em 0em" }}>
    
     <ListItem      
       secondaryAction={
-        <IconButton edge="end" aria-label="comments">
+        <IconButton edge="end" aria-label="delete" onClick={() => deleteTobuy(tobuy.id)}>
           <DeleteIcon />
         </IconButton>
       }
@@ -32,7 +31,7 @@ export default function BuyList() {
             disableRipple           
           />
         </ListItemIcon>
-        <ListItemText primary={`Line item`}/>
+        <ListItemText primary={tobuy.values}/>
       </ListItemButton>
     </ListItem>
   </Paper>
