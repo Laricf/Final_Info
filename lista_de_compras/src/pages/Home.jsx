@@ -13,8 +13,13 @@ export default function Home() {
         setTobuys([...tobuys, tobuy]);
     };
 
-    const deleteTobuy = (id) => {
-        console.log(id)
+    const deleteTobuy = (id) => {        
+        var filtered = tobuys.filter((tobuy) => tobuy.id !== id);
+        console.log(filtered)
+        setTobuys(filtered)
+        if (filtered.length == 0) {
+            console.log("Tem nada aqui")
+        }
     }
 
   return (

@@ -12,6 +12,7 @@ export default function Form({ addTobuy, deleteTobuy }) {
     const tobuyObj = {values: values, id: id};
     setId(id + 1);
     addTobuy(tobuyObj);
+    document.getElementById("outlined-basic").value = null
   }
 
   const handleChangeValues = (value) => {
