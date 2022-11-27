@@ -44,7 +44,8 @@ export default function Form({ addTobuy, deleteTobuy }) {
             label="Item" 
             variant="outlined" 
             onChange={(e) => setValues(e.target.value)} 
-            fullWidth />
+            fullWidth 
+            />
             <Button variant="text" /*onClick={handleClickButtom}*/ onClick={() => tobuyCreate(values)} >ADD</Button>
         </div>
     </Paper>   

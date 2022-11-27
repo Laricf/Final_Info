@@ -23,7 +23,7 @@ export default function BuyList({ tobuy, deleteTobuy, editTobuy} ) {
   return (
   <div>
     <EditText editTobuy={editTobuy} open={openDialog} dialogHandler={dialogHandler} tobuy={tobuy} />
-    <Paper style={{ borderRadius: "10px", padding: "0.5em 0em" }}>
+    <Paper style={{ borderRadius: "10px", padding: "0.5em 0em", backgroundColor: "#F5FF66"}}> 
     
       <ListItem
         secondaryAction={
@@ -38,7 +38,7 @@ export default function BuyList({ tobuy, deleteTobuy, editTobuy} ) {
             <Checkbox
               edge="start"
               tabIndex={-1}
-              disableRipple
+              disableRipple              
             />
           </ListItemIcon>
           <ListItemText primary={tobuy.values} onClick={() => setOpenDialog(true)}/>
