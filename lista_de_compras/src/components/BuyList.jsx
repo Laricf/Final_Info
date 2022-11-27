@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react'
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -10,7 +10,6 @@ import CommentIcon from '@mui/icons-material/Comment';
 import { Paper } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditText from './EditText';
-import { useState } from 'react';
 
 
 export default function BuyList({ tobuy, deleteTobuy, editTobuy} ) {  

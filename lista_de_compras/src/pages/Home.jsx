@@ -15,18 +15,19 @@ export default function Home() {
 
     const deleteTobuy = (id) => {        
         var filtered = tobuys.filter((tobuy) => tobuy.id !== id);
-        console.log(filtered)
-        setTobuys(filtered)
+        console.log(filtered);
+        setTobuys(filtered);
         if (filtered.length == 0) {
-            console.log("Tem nada aqui")
-        }
-    }
+            console.log("Tem nada aqui");
+        };
+    };
 
-    const editTobuy = (id, newValue) => {
-        console.log(id);
-        console.log(newValue);
-        console.log(tobuys);
-    }
+    const editTobuy = (id, editedText) => {      
+        var tobuysArray = [...tobuys];
+
+        tobuysArray.splice(id, 1, { values: editedText, id:id });
+        setTobuys(tobuysArray);
+    };
 
   return (
     <Container maxWidth="xs" style={{ marginTop: "1em" }}>

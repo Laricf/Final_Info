@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react'
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -10,8 +10,10 @@ import { TextField } from '@mui/material';
 
 export default function EditText({open, dialogHandler, tobuy, editTobuy}) {
     
+    const [editedText, setEditedText] = useState(tobuy.values)
+
     const textHandler = () => {
-        const [editedText, setEditedText] = useState(tobuy.values)
+        editTobuy(tobuy.id, editedText)
     }
 
   return (       
@@ -26,11 +28,11 @@ export default function EditText({open, dialogHandler, tobuy, editTobuy}) {
           {"Editando item"}
         </DialogTitle>
         <DialogContent>
-          <TextField fullWidth defaultValue={editedText}/>
+          <TextField fullWidth defaultValue={editedText} onChange={ (e) => setEditedText(e.target.value)}/>
         </DialogContent>
         <DialogActions>
           <Button onClick={dialogHandler}>Cancelar</Button>
-          <Button  autoFocus>
+          <Button autoFocus onClick={textHandler}>
             Ok
           </Button>
         </DialogActions>
