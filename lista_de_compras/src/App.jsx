@@ -4,14 +4,8 @@ import './App.css'
 import * as yup from "yup"
 import Axios from 'axios';
 import { ConstructionOutlined } from '@mui/icons-material';
-//import List from './components/List';
 import axios from 'axios';
-
-import BuyList from './components/BuyList';
-import Form from './components/Form';
-import { Container} from '@mui/system';
-import { List } from '@mui/material';
-
+import Home from './pages/Home';
 
 
 function App() {    
@@ -21,7 +15,7 @@ function App() {
   const handleChangeValues = (value) => {
     setValues((prevValue) => ({
       ...prevValue,
-      [value.target.name]: value.target.value,    
+      [value.target.name]: value.target.value,          
     }));
   };
 
@@ -31,6 +25,7 @@ function App() {
     }).then((response)=>{
       console.log(response)
     })
+    
   }
    
   useEffect (() => {
@@ -51,13 +46,7 @@ function App() {
   
   return ( 
     <div className="App">    
-        <Container maxWidth="xs" style={{ marginTop: "1em" }}>
-          <Form/>
-          <List sx={{width: '100%', bgcolor: 'background.paper' }}>
-            
-          </List>  
-          <BuyList/>       
-        </Container>          
+          <Home/>
           <div className='register--container'>
             <h1>Mercado</h1>
             <input
