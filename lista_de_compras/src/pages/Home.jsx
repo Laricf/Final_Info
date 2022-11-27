@@ -22,13 +22,19 @@ export default function Home() {
         }
     }
 
+    const editTobuy = (id, newValue) => {
+        console.log(id);
+        console.log(newValue);
+        console.log(tobuys);
+    }
+
   return (
     <Container maxWidth="xs" style={{ marginTop: "1em" }}>
         <Form addTobuy={addTobuy} />
         <List sx={{ marginTop: "1em" }}>
             {tobuys.map((tobuy) => ( 
                 <div key={tobuy.id} style={{ marginTop: "1em" }}>
-                    <BuyList tobuy={tobuy} deleteTobuy={deleteTobuy}/>
+                    <BuyList editTobuy={editTobuy} tobuy={tobuy} deleteTobuy={deleteTobuy}/>
                 </div>
             ))}     
             {/*<BuyList/> */}
