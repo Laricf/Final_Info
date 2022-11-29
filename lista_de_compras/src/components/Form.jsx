@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios';
 import { Button, Paper, TextField } from '@mui/material';
+import '../App.jsx'
 
 
 export default function Form({ addTobuy, deleteTobuy }) {
@@ -12,15 +13,22 @@ export default function Form({ addTobuy, deleteTobuy }) {
     const tobuyObj = {values: values, id: id};
     setId(id + 1);
     addTobuy(tobuyObj);
-    document.getElementById("outlined-basic").value = null
+    document.getElementById("outlined-basic").value = null; 
+    
+    Axios.post("http://localhost:3001/produto/insert", {
+      produto:values.produto,
+    }).then((response)=>{
+      console.log(response)
+    })
+    
   }
-
+ 
   const handleChangeValues = (value) => {
     setValues((prevValue) => ({
       ...prevValue,
       [value.target.name]: value.target.value,    
     }));
-  };
+  }; 
   
   const handleClickButtom = () => {    
     Axios.post("http://localhost:3001/produto/insert", {
@@ -29,24 +37,27 @@ export default function Form({ addTobuy, deleteTobuy }) {
       console.log(response)
     })
   }
-
-  useEffect (() => {
-    Axios.get("http://localhost:3001/produto/find")
-  })
  
-
   return (           
-    <Paper style={{ padding: "1em", borderRadius: "10px" }}>
-        <div style={{ display:"flex", justifyContent: "center"}}>
-            <TextField 
-            id="outlined-basic" 
-            name='produto' 
-            label="Item" 
-            variant="outlined" 
-            onChange={(e) => setValues(e.target.value)} 
-            fullWidth />
-            <Button variant="text" /*onClick={handleClickButtom}*/ onClick={() => tobuyCreate(values)} >ADD</Button>
-        </div>
+    <Paper style={{ padding: "1em", borderRadius: "10px", backgroundColor: "white"}}>
+      <div style={{ display:"flex", justifyContent: "center"}}>
+          <TextField           
+          type="text"            
+          id="outlined-basic" 
+          name='produto' 
+          label="o que eu desejo?" 
+          variant="outlined" 
+          onChange={(e) => setValues(e.target.value)}             
+          fullWidth           
+          />
+          <Button 
+          variant="text" /*</div>onClick={handleClickButtom}*/ 
+          onClick={() => tobuyCreate(values)} ><img src="./imgs/botao.png" alt="botão de adicionar" /></Button>            
+          <Button variant="text" 
+          className='register--button' 
+          onClick={handleClickButtom}><img src="./imgs/botao.png" alt="" /></Button>
+          {/*<button className='delete'>Deletar</button>*/}          
+      </div>
     </Paper>   
   )
 }

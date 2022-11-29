@@ -2,8 +2,6 @@ const mysql = require("mysql2/promise")
 const cors = require("cors")
 
 
- 
-
 var db = mysql.createPool({
     host: "localhost",
     user: "root",
