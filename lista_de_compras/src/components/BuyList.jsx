@@ -22,26 +22,34 @@ export default function BuyList({ tobuy, deleteTobuy, editTobuy} ) {
 
   return (
   <div>
-    <EditText editTobuy={editTobuy} open={openDialog} dialogHandler={dialogHandler} tobuy={tobuy} />
+    <EditText 
+    editTobuy={editTobuy} 
+    open={openDialog} 
+    dialogHandler={dialogHandler} 
+    tobuy={tobuy} 
+    />
     <Paper style={{ borderRadius: "10px", padding: "0.5em 0em", backgroundColor: "#F5FF66"}}> 
     
-      <ListItem
+      <ListItem               
         secondaryAction={
           <IconButton edge="end" aria-label="delete" onClick={() => deleteTobuy(tobuy.id)}>
             <DeleteIcon />
           </IconButton>
         }
-        disablePadding
+        disablePadding      
       >
-        <ListItemButton role={undefined}  dense>
+        <ListItemButton role={undefined}   dense>
           <ListItemIcon>
             <Checkbox
               edge="start"
               tabIndex={-1}
-              disableRipple              
+              disableRipple  
+              style={{ color: "green"}}            
             />
           </ListItemIcon>
-          <ListItemText primary={tobuy.values} onClick={() => setOpenDialog(true)}/>
+          <ListItemText primary={tobuy.values} 
+          onClick={() => setOpenDialog(true)} 
+          style={{ textTransform: "uppercase"}}/>
         </ListItemButton>
       </ListItem>
     </Paper>

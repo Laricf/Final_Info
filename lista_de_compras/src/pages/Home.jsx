@@ -3,8 +3,10 @@ import Form from '../components/Form';
 import { Container} from '@mui/system';
 import { List } from '@mui/material';
 import BuyList from '../components/BuyList';
+import '../App.css'
 
 export default function Home() {
+    
 
     const [tobuys, setTobuys] = useState([]);
 
@@ -18,7 +20,7 @@ export default function Home() {
         console.log(filtered);
         setTobuys(filtered);
         if (filtered.length == 0) {
-            console.log("Tem nada aqui");
+            console.log("Tem nada aqui");            
         };
     };
 
@@ -30,9 +32,9 @@ export default function Home() {
     };
 
   return (
-    <Container maxWidth="xs" style={{ marginTop: "1em" }}>
-        <Form addTobuy={addTobuy} />
-        <List sx={{ marginTop: "1em" }}>
+    <Container /*maxWidth="xs"*/ style={{ marginTop: "1em", width: "45%"}}>        
+        <Form addTobuy={addTobuy}/>        
+        <List sx={{ marginTop: "1em"}}>
             {tobuys.map((tobuy) => ( 
                 <div key={tobuy.id} style={{ marginTop: "1em" }}>
                     <BuyList editTobuy={editTobuy} tobuy={tobuy} deleteTobuy={deleteTobuy}/>
