@@ -18,7 +18,7 @@ h1{
     display: flex;
     justify-content: flex-end;
     align-items: center;    
-    gap: 4%;
+    gap: 2%;
     height:40px;
     width: 100%;
     color: #699429;
@@ -39,8 +39,8 @@ h1{
     display: flex;
     flex-direction: row;
     padding-top: 3px;
-    padding-right: 10px;
-    padding-left: 5px;
+    padding-right: 20px;
+    
 }
  .cabeca_segundo{
      background-color: #5E3E5C;
@@ -71,7 +71,7 @@ h1{
      display: flex;
      flex-direction: row;  
      align-items: center;   
-     width: 70px;
+     width: 100px;
      padding-right: 20px;
      
  }
@@ -118,12 +118,8 @@ h1{
      grid-template-columns: auto auto auto;
      grid-template-rows: 100px;
      gap: 30px;
-     
      padding-left: 40px;
      justify-content: center;  
-     
-     
-     
  }
  .nome_produto{
      display: flex;
@@ -141,7 +137,7 @@ h1{
      display: flex;     
      align-items: flex-start;     
      justify-content: space-around;   
-     
+     padding-top: 15px;
      height: 270px;
      width: 100vw;
      background-color: #F5FF66;       
@@ -151,6 +147,7 @@ h1{
      display: flex;
      align-items: center;
      flex-direction: column;
+     padding-top: 15px;
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
      border-radius: 4px;
      padding-left: 12px;
@@ -167,6 +164,7 @@ h1{
 
     body {
         background-image: url('../imgs/lapis2.jpg'); width: 100vw; height: 100vh;
+        background-size: cover;
     }
 
     .desktopPage {
