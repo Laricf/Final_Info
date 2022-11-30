@@ -1,0 +1,33 @@
+
+*{
+    padding: none;
+    border: none;
+    margin: 0;
+}
+
+.head {
+    display: flex;    
+    align-items: center;    
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #5E3E5C;        
+    width: 100vw;
+}
+
+
+@media (max-width:850px) {
+    h1 {
+        color: white;
+    }
+
+    .head{
+        
+    }
+
+    .title{        
+        width: 100vw;
+        height: 5vh;        
+        background-color: pink;
+    }
+    
+}
