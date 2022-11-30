@@ -86,10 +86,10 @@ function App() {
         <h1 className='organize'>ORGANIZE SUA LISTA AQUI</h1>        
         <div className="produtos">
           <p className='nome_produto'>Papel Higiênico</p>
-          <p className='nome_produto'>Ovos</p>
           <p className='nome_produto'>Feijão</p>
-          <p className='nome_produto'>Protetor Solar</p>
           <p className='nome_produto'>Detergente</p>
+          <p className='nome_produto'>Ovos</p>          
+          <p className='nome_produto'>Protetor Solar</p>          
           <p className='nome_produto'>Maçã</p>
         </div>
         <div>
