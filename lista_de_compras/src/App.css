@@ -1,22 +1,29 @@
+
+
 body {
     margin: 0;
     background-color:  #E6E6E6;
+    display: flex;
  }
 
 h1{ 
     font-size: 100%;
 }
 
- .cabeca_primeiro{
-     display: flex;
-     justify-content: flex-end;
-     padding-bottom: 20px;     
-     gap: 4%;
-     height:25px;
-     width: 100%;
-     color: #699429;
-     background-color: white;     
- }
+.mobile {
+    display: none;    
+}
+
+.cabeca_primeiro{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+    gap: 4%;
+    height:40px;
+    width: 100%;
+    color: #699429;
+    background-color: white;     
+}
  .insta{
      display: flex;
      flex-direction: row;
@@ -29,18 +36,20 @@ h1{
      gap: 2px;
  }
  .comp{
-     display: flex;
-     flex-direction: row;
-     padding-top: 3px;
-     padding-right: 10px;
-     padding-left: 5px;
- }
+    display: flex;
+    flex-direction: row;
+    padding-top: 3px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
  .cabeca_segundo{
      background-color: #5E3E5C;
+     padding-top: 20px;
+     margin-bottom: 60px;
      height: 80px;
      width: 100%;
      display: flex;
-     align-items: center;
+     align-items: center;     
      color: white;
      
  }
@@ -58,35 +67,62 @@ h1{
      justify-content: space-between;
      gap: 15px;
  }
- .conta{
-     flex-direction: row;
-     top: 10px;
+ .conta{    
+     display: flex;
+     flex-direction: row;  
+     align-items: center;   
      width: 70px;
      padding-right: 20px;
- }
- .body{
-     font-family: cursive;
-     font-size: 35px;
-     display: flex;
-     justify-content: center;
      
  }
- .organize{
-     background-color: rgba(245, 255, 102, 0.7);
-     border-radius: 9px; 
+
+ .opcoes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
  }
+
+.inferior {
+    margin-top: 40px;
+    
+}
+
+ .organize{
+    display: flex;
+    font-family: cursive;         
+    font-size: 35px;
+    height: 80px;
+    width: 700px;    
+    align-items: center;
+    background-color: rgba(245, 255, 102, 0.7);
+    border-radius: 9px; 
+    margin: 0px 0px 20px 30%;
+    padding-left: 20px;
+    padding-right: 50%;
+    margin-bottom: 5vh;
+     
+     
+ }
+ 
  h2{
      font-family: cursive;
      font-size: 20px;
      display: flex;
      justify-content: center;
+     margin-top: 70px;
+     
  }
  .produtos{
      display: grid;
-     grid-template-columns: 30% 30% 30%;
+     grid-template-columns: auto auto auto;
+     grid-template-rows: 100px;
      gap: 30px;
+     
      padding-left: 40px;
-     justify-content: center;
+     justify-content: center;  
+     
+     
      
  }
  .nome_produto{
@@ -102,14 +138,13 @@ h1{
      box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
  }
  .footer{
-     display: flex;
-     align-items: flex-start;
-     justify-content: space-around;
-     flex-direction: row;
+     display: flex;     
+     align-items: flex-start;     
+     justify-content: space-around;   
+     
      height: 270px;
      width: 100vw;
-     background-color: #F5FF66;
-       
+     background-color: #F5FF66;       
      box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
  }
  .img_produto{
@@ -119,8 +154,26 @@ h1{
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
      border-radius: 4px;
      padding-left: 12px;
-     gap: 10px;
-     
+     gap: 10px;     
  }
+
+ 
+ @media (max-width:850px) {
+    
+    .mobile {
+        display: contents;
+        background-color: #699429;        
+    }
+
+    body {
+        background-image: url('../imgs/lapis2.jpg'); width: 100vw; height: 100vh;
+    }
+
+    .desktopPage {
+        display: none;
+    }
+}
+
+
 
 

@@ -39,7 +39,7 @@ export default function Form({ addTobuy, deleteTobuy }) {
   }
  
   return (           
-    <Paper style={{ padding: "1em", borderRadius: "10px", backgroundColor: "white"}}>
+    <Paper style={{ padding: "0.5em", borderRadius: "10px", backgroundColor: "white"}}>
       <div style={{ display:"flex", justifyContent: "center"}}>
           <TextField           
           type="text"            
