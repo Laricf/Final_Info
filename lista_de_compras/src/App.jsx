@@ -7,7 +7,7 @@ import { ConstructionOutlined } from '@mui/icons-material';
 import axios from 'axios';
 import Home from './pages/Home';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import Mobile from './pages/mobile/Mobile'
+import Mobile from './components/mobile/Mobile'
 import Cabecalho from './components/Cabecalho'
 import Corpo from './components/Corpo'
 

@@ -6,7 +6,7 @@ import { ConstructionOutlined } from '@mui/icons-material';
 import axios from 'axios';
 import './App.css'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import Home from '../Home';
+import Home from '../../pages/Home';
 
 
 function Mobile() {    
