@@ -7,7 +7,6 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
-    
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -20,8 +19,10 @@
     "formik": "^2.2.9",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
+    "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
     "yup": "^0.32.11"
   },
   "devDependencies": {

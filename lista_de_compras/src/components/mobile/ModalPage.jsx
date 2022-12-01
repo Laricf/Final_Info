@@ -1,21 +1,18 @@
 
 import React, { useState, useEffect } from 'react'
-import './App.css'
 import * as yup from "yup"
 import Axios from 'axios';
 import { ConstructionOutlined } from '@mui/icons-material';
 import axios from 'axios';
-import Home from './pages/Home';
+import './App.css'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import Mobile from './components/mobile/Mobile'
-import Cabecalho from './components/Cabecalho'
-import Corpo from './components/Corpo'
-import Second from './components/SecondMobile/Second'
+import Home from '../../pages/Home';
+import Modal from 'react-modal';
+import Mobile from './Mobile'
 
+Modal.setAppElement('#root')
 
-
-
-function App() {    
+function ModalPage({handleOpenModal, handleCloseModal}) {    
 
   const [values, setValues] = useState();  
   
@@ -53,20 +50,40 @@ function App() {
   })     
 
   
-  return ( 
-    <div className="App">
-      <div className='mobile'><Mobile/></div>                  
-      <div className='desktopPage'>
-        <Cabecalho/>                   
-        <Corpo/>
-        <div id='second'><Second/></div>
-      </div>
+  const [modalIsOpen, setIsopen] = useState(false)
+  
+    function handleOpenModal() {
+      setIsopen(true)
+    }
+
+    function handleCloseModal() {
+      setIsopen(false)
+    }
+
+    const customStyle = {
+      content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto'
+        
+      }
+    }
+
+  return (   
+    <div>
+        <div className='modal'>          
+        <Modal isOpen={modalIsOpen} onRequestClose={handleCloseModal}>
+          <div className='estilo'>            
+            <button onClick={handleCloseModal}>Close</button>                        
+          </div>            
+          </Modal>
+        </div>                         
     </div>
   )
 }
 
 
-export default App
+export default ModalPage
  
 
 

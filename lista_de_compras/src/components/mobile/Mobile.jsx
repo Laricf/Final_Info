@@ -7,7 +7,11 @@ import axios from 'axios';
 import './App.css'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Home from '../../pages/Home';
+import Modal from 'react-modal';
+/*import main from '../../../src/main'*/
+import Second from '../SecondMobile/Second'
 
+Modal.setAppElement('#root')
 
 function Mobile() {    
 
@@ -46,6 +50,25 @@ function Mobile() {
     axios.get("http://localhost:3001/produto/delete")
   })     
 
+  
+  const [modalIsOpen, setIsopen] = useState(false)
+  
+    function handleOpenModal() {
+      setIsopen(true)         
+    }
+
+    function handleCloseModal() {
+      setIsopen(false)       
+    }
+
+    const customStyle = {
+      content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',        
+      }
+    }
+
   return ( 
     <div className="App">        
       <div className='head' style={{ height: "50px"}}>
@@ -64,12 +87,17 @@ function Mobile() {
         onChange={handleChangeValues} /*value = {this.state.produto}*//>
         <button className='register--button' onClick={handleClickButtom}><img src="./imgs/botao.png" alt="" /></button>
         <button className='delete'>Deletar</button>
-        <div id='botao' onClick={console.log('clicou')}>          
-        <div id='img'><img src="../imgs/botaoII.png" alt="" /></div>
-          
-          
+        <div id='botao' onClick={handleOpenModal}>          
+        <div id='img'><img src="../imgs/botaoII.png" alt="" /></div>                    
         </div>
-      </div>                    
+
+        <div className='modal'>
+          <Modal isOpen={modalIsOpen} onRequestClose={handleCloseModal}>                        
+            <button onClick={handleCloseModal}>Close</button>
+            <div> <Second/></div>                      
+          </Modal>          
+        </div>             
+      </div>                
     </div>
   )
 }

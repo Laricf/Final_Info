@@ -8,11 +8,12 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Home from '../pages/Home';
 
 
+
 function Corpo() {    
 
   return ( 
-    <div id='corpo'>
-        <h1 className='organize'>ORGANIZE SUA LISTA AQUI</h1>
+    <div id='corpo'>  
+        <h2 className='organize' > ORGANIZE SUA LISTA AQUI</h2>          
         <div className="produtos">
             <p className='nome_produto'>Papel Higiênico</p>
             <p className='nome_produto'>Feijão</p>
