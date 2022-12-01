@@ -64,6 +64,11 @@ function Mobile() {
         onChange={handleChangeValues} /*value = {this.state.produto}*//>
         <button className='register--button' onClick={handleClickButtom}><img src="./imgs/botao.png" alt="" /></button>
         <button className='delete'>Deletar</button>
+        <div id='botao' onClick={console.log('clicou')}>          
+        <div id='img'><img src="../imgs/botaoII.png" alt="" /></div>
+          
+          
+        </div>
       </div>                    
     </div>
   )
