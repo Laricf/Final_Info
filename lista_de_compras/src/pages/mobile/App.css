@@ -5,30 +5,24 @@
     margin: 0;
 }
 
+h1 {
+    color: white;
+}
+
+
 .head {
     display: flex;    
     align-items: center;    
     justify-content: center;
     justify-content: space-around;
     background-color: #5E3E5C;        
-    width: 100vw;
-    color: green;
+    width: 100vw;    
+}
+
+#paper {
+    background-color: aqua;
 }
 
 
-@media (max-width:850px) {
-    h1 {
-        color: white;
-    }
 
-    .head{
-        
-    }
 
-    .title{        
-        width: 100vw;
-        height: 5vh;        
-        background-color: pink;
-    }
-    
-}

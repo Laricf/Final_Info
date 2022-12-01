@@ -94,6 +94,7 @@ h1{
     display: flex;
     font-family: cursive;         
     font-size: 35px;
+    color: black;
     height: 80px;
     width: 700px;    
     align-items: center;
@@ -107,12 +108,12 @@ h1{
      
  }
  
- h2{
-     font-family: cursive;
-     font-size: 20px;
-     display: flex;
-     justify-content: center;
-     margin-top: 70px;
+ h2{    
+    font-family: cursive;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;     
      
  }
  .produtos{
@@ -165,10 +166,16 @@ h1{
     .mobile {
         display: contents;
         background-color: #699429;        
-    }
+    }    
 
     body {
-        background-image: url('../imgs/lapis2.jpg'); width: 100vw; height: 100vh;
+        background-size: cover;
+        background-image: url('../imgs/medium.jpg'); width: 100vw; height: 100vh;
+
+    }    
+
+    .head {
+        margin-bottom: 30px;
     }
 
     .desktopPage {

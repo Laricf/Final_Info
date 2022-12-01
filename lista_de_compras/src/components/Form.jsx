@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios';
 import { Button, Paper, TextField } from '@mui/material';
-import '../App.jsx'
+import '../App.jsx';
+
 
 
 export default function Form({ addTobuy, deleteTobuy }) {
@@ -38,26 +39,26 @@ export default function Form({ addTobuy, deleteTobuy }) {
     })
   }
  
-  return (           
-    <Paper style={{ padding: "0.5em", borderRadius: "10px", backgroundColor: "white"}}>
-      <div style={{ display:"flex", justifyContent: "center"}}>
-          <TextField           
-          type="text"            
-          id="outlined-basic" 
-          name='produto' 
-          label="o que eu desejo?" 
-          variant="outlined" 
-          onChange={(e) => setValues(e.target.value)}             
-          fullWidth           
-          />
-          <Button 
-          variant="text" /*</div>onClick={handleClickButtom}*/ 
-          onClick={() => tobuyCreate(values)} ><img src="./imgs/botao.png" alt="botão de adicionar" /></Button>            
-          <Button variant="text" 
-          className='register--button' 
-          onClick={handleClickButtom}><img src="./imgs/botao.png" alt="" /></Button>
-          {/*<button className='delete'>Deletar</button>*/}          
-      </div>
-    </Paper>   
+  return (               
+      <Paper style={{ padding: "0.5em", borderRadius: "10px", backgroundColor: "white"}}>
+        <div id='textfield' style={{ display:"flex", justifyContent: "center"}}>
+            <TextField
+            type="text"
+            id="outlined-basic"
+            name='produto'
+            label="o que eu desejo?"
+            variant="outlined"
+            onChange={(e) => setValues(e.target.value)}
+            fullWidth
+            />
+            <Button
+            variant="text" /*</div>onClick={handleClickButtom}*/
+            onClick={() => tobuyCreate(values)} ><img src="./imgs/botao.png" alt="botão de adicionar" /></Button>
+            <Button variant="text"
+            className='register--button'
+            onClick={handleClickButtom}><img src="./imgs/botao.png" alt="" /></Button>
+            {/*<button className='delete'>Deletar</button>*/}
+        </div>
+      </Paper>    
   )
 }
