@@ -3,10 +3,11 @@ const cors = require("cors")
 
 
 var db = mysql.createPool({
-    host: "localhost",
-    user: "root",
-    password: "Brunn4qu31r0z",
-    database: "listamercado",
+    host: "bnd5dssud6aytjfy9grh-mysql.services.clever-cloud.com",
+    user: "ufiwipddw1qhlebr",
+    password: "wOOoga7uXdHwt2N0GZMl",
+    database: "bnd5dssud6aytjfy9grh",
+    port: 3306
 })
 
 module.exports = {
@@ -14,7 +15,7 @@ module.exports = {
         let datas = req.body
 
         try {
-            const response = await db.query('INSERT INTO MERCADO SET ?', [datas]);
+            const response = await db.query('INSERT INTO compras SET ?', [datas]);
             res.json(response)
         } catch (error) {
             console.log(error)
@@ -35,7 +36,7 @@ module.exports = {
 
     async find(req, res){        
         try {
-            const response = await db.query('SELECT * FROM mercado');
+            const response = await db.query('SELECT * FROM compras');
             res.json(response[0]);
         } catch(error) {
             console.log(error);

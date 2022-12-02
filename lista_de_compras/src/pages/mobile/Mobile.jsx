@@ -11,41 +11,23 @@ import Home from '../Home';
 
 function Mobile() {    
 
-  const [values, setValues] = useState();  
+  const [modalIsOpen, setIsopen] = useState(false)
   
+    function handleOpenModal() {
+      setIsopen(true)         
+    }
 
-  const handleChangeValues = (value) => {
-    setValues((prevValue) => ({
-      ...prevValue,
-      [value.target.name]: value.target.value,          
-    }));
-  };
+    function handleCloseModal() {
+      setIsopen(false)       
+    }
 
-  const handleClickButtom = () => {    
-    Axios.post("http://localhost:3001/produto/insert", {
-      produto:values.produto,
-    }).then((response)=>{
-      console.log(response)
-    })
-    
-  }
-   
-  useEffect (() => {
-    axios.get("http://localhost:3001/produto/find")
-  })
-
-  const ClickDelete = () => {
-    Axios.post("http://localhost:3001/produto/delete", {
-      produto:values.produto,
-    }).then((response) => {
-      console.log(response)
-    })        
-  }
-
-  useEffect (() => {
-    axios.get("http://localhost:3001/produto/delete")
-  })     
-
+    const customStyle = {
+      content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',        
+      }
+    }
   return ( 
     <div className="App">  
       <h1>Oi</h1>

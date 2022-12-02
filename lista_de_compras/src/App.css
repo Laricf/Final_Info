@@ -155,12 +155,25 @@ h1{
  }
  .caixa_produto{
     display: grid;
+<<<<<<< Updated upstream
     grid-template-columns: 50% 50% 50%;
     grid-template-rows: 50%;
     gap: 30px;
     padding-left:  -50%;
  }
  
+=======
+    grid-template-columns: 40% 40% 40% ;    
+    gap: 4%;
+    padding-right: 10%;
+}
+   
+ #second {
+    display: none;
+ }
+
+
+>>>>>>> Stashed changes
  @media (max-width:850px) {
     
     .mobile {

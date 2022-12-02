@@ -32,16 +32,18 @@ export default function Home() {
     };
 
   return (
-    <Container /*maxWidth="xs"*/ style={{ margin: "auto", minWidth: "160px", maxWidth: "600px"}}>        
+    <Container className="Caixa" /*maxWidth="xs"*/ style={{ margin: "auto", minWidth: "160px", maxWidth: "600px"}}> 
+    <div id='texto' style={{width: "550px"}}>     
         <Form addTobuy={addTobuy}  />        
-        <List className='caixa_produto' sx={{ marginTop: "10em", maringLeft: "-50px"}} >
+        <List className='caixa_produto' sx={{ marginTop: "30%"}} style={{  marginLeft: "-250px"}} >
             {tobuys.map((tobuy) => ( 
                 <div key={tobuy.id} style={{marginTop:"5em"}} >
                     <BuyList editTobuy={editTobuy} tobuy={tobuy} deleteTobuy={deleteTobuy}/>
                 </div>
             ))}     
             {/*<BuyList/> */}
-        </List>                 
+        </List>   
+    </div>                   
     </Container> 
   )
 }

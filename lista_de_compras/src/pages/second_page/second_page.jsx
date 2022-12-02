@@ -22,42 +22,7 @@ import Home_desk from "../../components/Home_2"
 
 function App() {    
 
-  const [values, setValues] = useState();  
-  
 
-  const handleChangeValues = (value) => {
-    setValues((prevValue) => ({
-      ...prevValue,
-      [value.target.name]: value.target.value,          
-    }));
-  };
-
-  const handleClickButtom = () => {    
-    Axios.post("http://localhost:3001/produto/insert", {
-      produto:values.produto,
-    }).then((response)=>{
-      console.log(response)
-    })
-    
-  }
-   
-  useEffect (() => {
-    axios.get("http://localhost:3001/produto/find")
-  })
-
-  const ClickDelete = () => {
-    Axios.post("http://localhost:3001/produto/delete", {
-      produto:values.produto,
-    }).then((response) => {
-      console.log(response)
-    })        
-  }
-
-  useEffect (() => {
-    axios.get("http://localhost:3001/produto/delete")
-  })     
-
-  
   return ( 
     <div className="App_2">
       <div className='mobile'><Mobile/></div>                  

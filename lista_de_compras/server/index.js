@@ -24,7 +24,7 @@ app.post("/produto", (req, res) => {
     const {produto} = req.body;
     console.log(produto)
 
-    const response = "INSERT INTO mercado (produto) VALUES ?";
+    const response = "INSERT INTO compras (produto) VALUES ?";
 
     db.query(response, [produto], (err, result) => {
         console.log("err");

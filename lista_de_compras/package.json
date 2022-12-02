@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
-    
+    "preview": "vite preview",
+  
+    "start": "nodemon index.js"
+
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -20,6 +22,11 @@
     "formik": "^2.2.9",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
+<<<<<<< Updated upstream
+=======
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20",
+>>>>>>> Stashed changes
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "yup": "^0.32.11"
