@@ -8,6 +8,7 @@ import axios from 'axios';
 import Home from './pages/Home';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Mobile from './pages/mobile/Mobile'
+import Second from "../src/pages/second_page/second_page"
 
 
 
