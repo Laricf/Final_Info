@@ -33,7 +33,7 @@ function Cabecalho() {
               <div className='logo_esquerdo'>
               <div className='opcoes'>
                 <div className='lista'>
-                  <p> <img className="img_lista" src="./src/assets/flechas.png" alt="Flechas" /> Criar nova lista</p>
+                  <p id='criar'> <img className="img_lista" src="./src/assets/flechas.png" alt="Flechas" /> Criar nova lista</p>
                 </div>
                 <div className='conta'>
                   <img src="./src/assets/Símbolo perfil.png" alt="perfil icone" style={{width: "35px", height: "30px"}}/>

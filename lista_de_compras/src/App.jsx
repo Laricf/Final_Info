@@ -18,6 +18,7 @@ import First_desk from "./pages/first_page"
 
 
 
+
 function App() {    
 
   const [values, setValues] = useState();  
@@ -56,13 +57,13 @@ function App() {
   })     
 
   
-  return (
-      <div className="App">
-          <Routes>
-            <Route path='/' element={<First_desk />} />
-            <Route path='/lista' element={<Second_desk />} />
-          </Routes>
-      
+  return ( 
+    <div className="App">
+      <div className='mobile'><Mobile/></div>                  
+      <div className='desktopPage'>
+        <Cabecalho/>                   
+        <Corpo/>
+        <div id='second'><Second/></div>
       </div>
       
       

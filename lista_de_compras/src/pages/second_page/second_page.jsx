@@ -13,13 +13,7 @@ import { List } from '@mui/material';
 import BuyList from '../../components/BuyList';
 import Home_desk from "../../components/Home_2"
 
-
-
-
-
-
-
-function App() {    
+function second_page() {    
 
   const [values, setValues] = useState();  
   
@@ -100,4 +94,4 @@ function App() {
   )
 }
 
-export default App
+export default second_page

@@ -17,6 +17,7 @@
     /*wrap = quebre quando não couber mais; 
     nowrap = matenha sempre lado a lado*/
     gap: 15px;
+    align-items: center;   
 }
 
 
