@@ -15,12 +15,13 @@ function Corpo() {
     <div id='corpo'>  
         <h2 className='organize' > ORGANIZE SUA LISTA AQUI</h2>          
         <div className="produtos">
-            <p className='nome_produto'>Papel Higiênico</p>
-            <p className='nome_produto'>Feijão</p>
-            <p className='nome_produto'>Detergente</p>
-            <p className='nome_produto'>Ovos</p>
-            <p className='nome_produto'>Protetor Solar</p>
-            <p className='nome_produto'>Maçã</p>
+            <button  className='nome_produto'>Papel Higiênico</button>
+            <button  className='nome_produto'>Feijão</button >
+            <button  className='nome_produto'>Detergente</button >
+            <button  className='nome_produto'>Ovos</button >
+            <button  className='nome_produto'>Protetor Solar</button >
+            <button  className='nome_produto'>Maçã</button >
+            
         </div>
         <div>
             <h2>TALVEZ VOCÊ TAMBÉM PRECISE...</h2>

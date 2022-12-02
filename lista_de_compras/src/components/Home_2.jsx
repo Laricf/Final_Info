@@ -5,7 +5,7 @@ import { List } from '@mui/material';
 import BuyList from '../components/BuyList';
 import '../App.css'
 
-export default function Home() {
+export default function Home_2() {
     
 
     const [tobuys, setTobuys] = useState([]);
@@ -32,9 +32,9 @@ export default function Home() {
     };
 
   return (
-    <Container /*maxWidth="xs"*/ style={{ margin: "auto", minWidth: "160px", maxWidth: "600px"}}>        
+    <Container className="Caixa" /*maxWidth="xs"*/ style={{ margin: "auto", minWidth: "160px", maxWidth: "600px"}}>        
         <Form addTobuy={addTobuy}  />        
-        <List className='caixa_produto' sx={{ marginTop: "10em", maringLeft: "-50px"}} >
+        <List className='caixa_produto' sx={{ marginTop: "10em"}} >
             {tobuys.map((tobuy) => ( 
                 <div key={tobuy.id} style={{marginTop:"5em"}} >
                     <BuyList editTobuy={editTobuy} tobuy={tobuy} deleteTobuy={deleteTobuy}/>
