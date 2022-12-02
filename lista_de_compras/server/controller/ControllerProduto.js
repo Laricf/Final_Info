@@ -21,7 +21,7 @@ module.exports = {
         }
     },
 
-    async delete(req, res){
+    /*async delete(req, res){
         let datas = req.body.produto;
         
         console.log(datas)
@@ -31,7 +31,7 @@ module.exports = {
         } catch (error) {            
             console.log(error);
         }
-    },
+    },*/
 
     async find(req, res){        
         try {

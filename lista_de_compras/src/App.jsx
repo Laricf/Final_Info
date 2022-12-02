@@ -56,13 +56,13 @@ function App() {
 
   
   return ( 
-    <div className="App">
-      <div className='mobile'><Mobile/></div>                  
+    <div className="App">      
+      <div className='mobile'><Mobile/></div>
       <div className='desktopPage'>
-        <Cabecalho/>                   
+        <Cabecalho/>
         <Corpo/>
-        <h1>Apague-me</h1>
-        <div id='second'><Second/></div>
+        <div id='second'><Second/></div>      
+      <div><Second_desk/></div>
       </div>
     </div>
   )

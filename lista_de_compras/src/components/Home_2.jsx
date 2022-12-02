@@ -5,7 +5,7 @@ import { List } from '@mui/material';
 import BuyList from '../components/BuyList';
 import '../App.css'
 
-export default function Home() {
+export default function Home_2() {
     
 
     const [tobuys, setTobuys] = useState([]);
