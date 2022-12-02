@@ -7,10 +7,6 @@ import { ConstructionOutlined } from '@mui/icons-material';
 import axios from 'axios';
 import Home from './pages/Home';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-<<<<<<< Updated upstream
-import Mobile from './pages/mobile/Mobile'
-import Second from "../src/pages/second_page/second_page"
-=======
 import Mobile from './components/mobile/Mobile'
 import Cabecalho from './components/Cabecalho'
 import Corpo from './components/Corpo'
@@ -21,7 +17,7 @@ import First_desk from "./pages/first_page"
 
 
   function App() {    
->>>>>>> Stashed changes
+s
 
     
   return ( 
