@@ -59,12 +59,13 @@ function App() {
   
   return ( 
     <div className="App">
-      <div className='mobile'><Mobile/></div>                  
-      <div className='desktopPage'>
-        <Cabecalho/>                   
-        <Corpo/>
-        <div id='second'><Second/></div>
-      </div>
+      <Routes>
+        <Route path='/' element={<First_desk/> }/>
+        <Route path='/lista' element={<Second_desk/> }/>
+
+      </Routes>
+
+    </div>
       
       
   )
