@@ -11,6 +11,7 @@ import Mobile from './components/mobile/Mobile'
 import Cabecalho from './components/Cabecalho'
 import Corpo from './components/Corpo'
 import Second from './components/SecondMobile/Second'
+import Second_desk from "../src/pages/second_page/second_page"
 
 
 

@@ -156,6 +156,13 @@ h1{
      padding-left: 12px;
      gap: 10px;     
  }
+ .caixa_produto{
+    display: grid;
+    grid-template-columns: 50% 50% 50%;
+    grid-template-rows: 50%;
+    gap: 30px;
+    padding-left:  -50%;
+ }
 
  #second {
     display: none;
