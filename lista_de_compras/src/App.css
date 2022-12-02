@@ -7,7 +7,25 @@ body {
  }
 
 h1{ 
-    font-size: 100%;
+    font-size: 100%;  
+    
+}
+
+#textConta, #criar {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+#listaVerde {
+    padding-bottom: 12px;
+}
+
+#suaLista {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 17px;            
+    
+    width: 300px;   
+    height: 33px;
 }
 
 .mobile {
@@ -24,11 +42,21 @@ h1{
     color: #699429;
     background-color: white;     
 }
+
+.insta, .sugestao, .comp {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+
  .insta{
-     display: flex;
-     flex-direction: row;
-     padding-top: 3px;
-     gap: 2px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 3px;
+    gap: 2px;
+    
  }
  .sugestao{
      display: flex;
@@ -82,18 +110,20 @@ h1{
     display: flex;
     align-items: center;
     gap: 10px;
-    
+    padding-right: 135px;    
  }
 
 .inferior {
     margin-top: 40px;
-    
+        
 }
 
  .organize{
     display: flex;
-    font-family: cursive;         
-    font-size: 35px;
+    /*font-family: 'Rum Raisin', sans-serif;*/
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-weight: 100;        
+    font-size: 40px;    
     color: black;
     height: 80px;
     width: 700px;    
@@ -103,13 +133,13 @@ h1{
     margin: 0px 0px 20px 30%;
     padding-left: 20px;
     padding-right: 17%;
-    margin-bottom: 5vh;
-     
-     
+    margin-bottom: 5vh;          
  }
  
  h2{    
-    font-family: cursive;
+    /*font-family: cursive;    */
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-weight: 400;   
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -118,18 +148,19 @@ h1{
  }
  .produtos{
     display: grid;
-     grid-template-columns: auto auto auto;
-     grid-template-rows: 100px;
-     gap: 30px;     
-     padding-left: 40px;
-     justify-content: center;            
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px;
+    gap: 30px;     
+    padding-left: 40px;
+    justify-content: center;            
      
  }
  .nome_produto{
      display: flex;
-     justify-content: center;
+     justify-content: center;     
      align-items: center;
      background-color: #F5FF66;
+     font-family: 'Raleway', sans-serif;
      font-size: 24px;
      height: 7vh;
      width: 30vw;
@@ -138,20 +169,25 @@ h1{
      box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
  }
  .footer{
-     display: flex;     
-     align-items: flex-start;     
-     justify-content: space-around;   
-     
-     height: 270px;
-     width: 100vw;
-     background-color: #F5FF66;       
-     box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+    display: flex;  
+    height: 270px;
+    width: 100vw;   
+    align-items: flex-start;     
+    justify-content: space-around;         
+    align-items: center;       
+    margin-top: 35px;
+    background-color: #F5FF66;       
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.25);    
+    
+
  }
  .img_produto{
      display: flex;
      align-items: center;
-     flex-direction: column;
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     flex-direction: column;  
+     font-size: 15px;                    
+     font-family: 'Raleway', sans-serif;
+     font-weight: 600;
      border-radius: 4px;
      padding-left: 12px;
      gap: 10px;     
