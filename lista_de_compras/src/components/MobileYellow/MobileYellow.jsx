@@ -9,7 +9,6 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Home from '../../pages/Home';
 import Modal from 'react-modal';
 import FormII from '../FormII';
-/*import main from '../../../src/main'*/
 import Second from '../SecondMobile/Second'
 import HomeY from './HomeY';
 import BuyListY from './BuyListY';

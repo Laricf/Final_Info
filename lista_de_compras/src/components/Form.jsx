@@ -29,13 +29,7 @@ export default function Form({ addTobuy, deleteTobuy }) {
     }));
   }; 
   
-  {/*const handleClickButtom = () => {    
-    Axios.post("http://localhost:3001/produto/insert", {
-      produto:values,
-    }).then((response)=>{
-      console.log(response)
-    })
-  }*/}
+
  
   return (               
       <Paper style={{ padding: "0.5em", borderRadius: "10px", 

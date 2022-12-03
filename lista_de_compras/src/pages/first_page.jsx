@@ -1,17 +1,12 @@
 
 import React, { useState, useEffect } from 'react'
 import '../App.css'
-import * as yup from "yup"
 import Axios from 'axios';
-import { ConstructionOutlined } from '@mui/icons-material';
 import axios from 'axios';
-import Home from '../pages/Home';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Mobile from '../components/mobile/Mobile'
-import Cabecalho from '../components/Cabecalho'
+import Cabecalho from './Cabecalho_first'
 import Corpo from '../components/Corpo'
 import Second from '../components/SecondMobile/Second'
-import {Link, Routes, Route} from "react-router-dom"
 import MobileYellow from "../components/MobileYellow/MobileYellow"
 
 

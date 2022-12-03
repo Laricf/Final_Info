@@ -8,7 +8,6 @@ import './App.css'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Home from '../../pages/Home';
 import FormII from '../FormII';
-//import Corpo from './components/Corpo'
 import Corpo from  '../Corpo'
 import ModalPage from '../mobile/ModalPage'
 import CorpoII from '../CorpoII/CorpoII'

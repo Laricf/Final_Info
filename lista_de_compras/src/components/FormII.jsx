@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Axios from 'axios';
+
 import { Button, Paper, TextField } from '@mui/material';
 import '../App.jsx';
 
@@ -16,28 +16,9 @@ export default function FormII({ addTobuy, deleteTobuy }) {
     addTobuy(tobuyObj);
     document.getElementById("outlined-basic").value = null; 
     
-    {/*Axios.post("http://localhost:3001/produto/insert", {
-      produto:values.produto,
-    }).then((response)=>{
-      console.log(response)
-    })*/}
-    
+   
   }
  
-  {/*const handleChangeValues = (value) => {
-    setValues((prevValue) => ({
-      ...prevValue,
-      [value.target.name]: value.target.value,    
-    }));
-  }; */}
-  
-  {/*const handleClickButtom = () => {    
-    Axios.post("http://localhost:3001/produto/insert", {
-      produto:values.produto,
-    }).then((response)=>{
-      console.log(response)
-    })
-  }*/}
  
   return (               
       <Paper style={{ padding: "0.5em", borderRadius: "9px", 
