@@ -81,9 +81,8 @@ function MobileYellow(handleOpenModal, handleCloseModal) {
         <h1 id='buyList' style={{ textAlign: "center", fontSize: "100%" }}>LISTA DE COMPRAS</h1> 
         <AccountCircleIcon style={{color: "#F5FF66"}}/>         
       </div>
-      <HomeY/> 
-               
-    </div>
+      <HomeY/>
+    </div>  
   )
 }
 

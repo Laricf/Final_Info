@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Form from '../components/Form';
+import Form from '../pages/second_page/Form_second';
 import { Container} from '@mui/system';
 import { List } from '@mui/material';
 import BuyList from '../components/BuyList';
