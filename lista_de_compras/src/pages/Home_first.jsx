@@ -35,6 +35,13 @@ export default function Home() {
     <Container  style={{ margin: "auto", minWidth: "160px", maxWidth: "600px"}}>        
         <div id='texto' style={{width: "40vw"}}>
             <Form addTobuy={addTobuy} />
+            <List sx={{ marginTop: "0%"}}>
+                {tobuys.map((tobuy) => (
+                    <div key={tobuy.id} style={{marginTop:"5em"}} >
+                    </div>
+                ))}
+                {/*<BuyList/> */}
+            </List>
         </div>                
     </Container> 
   )
