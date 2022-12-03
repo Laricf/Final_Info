@@ -15,9 +15,28 @@ import CorpoII from '../CorpoII/CorpoII'
 import Modal from 'react-modal';
 
 
-function Second({handleCloseModal}) {    
+Modal.setAppElement('#root')
+
+function Second({handleCloseModal, handleOpenModal}) {    
   
-    
+  const [modalIsOpen, setIsopen] = useState(false)
+  
+    function handleOpenModal() {
+      setIsopen(true)         
+    }
+
+    function handleCloseModal() {
+      setIsopen(false)       
+    }
+
+    const customStyle = {
+      content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',        
+      }
+    }
+
   return ( 
     <div className="AppII">           
       <div className='headII' style={{ height: "50px"}}>
@@ -28,7 +47,7 @@ function Second({handleCloseModal}) {
       <img id='ponta' src="../imgs/pontaLapis.jpg" alt=""/>                                       
       <FormII/>
       <div id='img' style={{ marginLeft: "50%", paddingTop: "20px", paddingBottom: "20px"}}>
-       <img id='botaoMobile' src="../imgs/botaoII.png" alt="" onClick={handleCloseModal}/>              
+        <img id='botaoMobile' src="../imgs/botaoII.png" alt="" onClick={handleCloseModal}/>               
       </div>
       <CorpoII/>
     </div>

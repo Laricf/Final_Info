@@ -4,7 +4,6 @@ import { Button, Paper, TextField } from '@mui/material';
 import '../App.jsx';
 
 
-
 export default function Form({ addTobuy, deleteTobuy }) {
 
   const [values, setValues] = useState(); 
@@ -14,12 +13,12 @@ export default function Form({ addTobuy, deleteTobuy }) {
     const tobuyObj = {values: values, id: id};
     setId(id + 1);
     addTobuy(tobuyObj);
-    document.getElementById("outlined-basic").value = null; 
+    document.getElementById("outlined-basic").value = null;     
     Axios.post("http://localhost:3001/produto/insert", {
       produto:values,
     }).then((response)=>{
       console.log(response)
-    })
+    })  
     
   }
  
@@ -51,12 +50,8 @@ export default function Form({ addTobuy, deleteTobuy }) {
             fullWidth
             />
             <Button
-            variant="text" /*</div>onClick={handleClickButtom}*/
-            onClick={() => tobuyCreate(values)} ><img src="./imgs/botao.png" alt="botão de adicionar" /></Button>
-            {/*<Button variant="text"
-            className='register--button'
-            onClick={handleClickButtom}><img src="./imgs/botao.png" alt="" /></Button>
-            {/*<button className='delete'>Deletar</button>*/}
+            variant="text" 
+            onClick={() => tobuyCreate(values)}><img src="./imgs/botao.png" alt="botão de adicionar" /></Button>           
         </div>
       </Paper>    
   )

@@ -14,7 +14,7 @@ Modal.setAppElement('#root')
 
 function ModalPage({handleOpenModal, handleCloseModal}) {    
 
-  const [values, setValues] = useState();  
+  {/*const [values, setValues] = useState();  
   
 
   const handleChangeValues = (value) => {
@@ -47,7 +47,7 @@ function ModalPage({handleOpenModal, handleCloseModal}) {
 
   useEffect (() => {
     axios.get("http://localhost:3001/produto/delete")
-  })     
+  })     */}
 
   
   const [modalIsOpen, setIsopen] = useState(false)

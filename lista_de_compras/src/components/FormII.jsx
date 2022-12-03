@@ -16,28 +16,28 @@ export default function FormII({ addTobuy, deleteTobuy }) {
     addTobuy(tobuyObj);
     document.getElementById("outlined-basic").value = null; 
     
-    Axios.post("http://localhost:3001/produto/insert", {
+    {/*Axios.post("http://localhost:3001/produto/insert", {
       produto:values.produto,
     }).then((response)=>{
       console.log(response)
-    })
+    })*/}
     
   }
  
-  const handleChangeValues = (value) => {
+  {/*const handleChangeValues = (value) => {
     setValues((prevValue) => ({
       ...prevValue,
       [value.target.name]: value.target.value,    
     }));
-  }; 
+  }; */}
   
-  const handleClickButtom = () => {    
+  {/*const handleClickButtom = () => {    
     Axios.post("http://localhost:3001/produto/insert", {
       produto:values.produto,
     }).then((response)=>{
       console.log(response)
     })
-  }
+  }*/}
  
   return (               
       <Paper style={{ padding: "0.5em", borderRadius: "9px", 
@@ -55,10 +55,10 @@ export default function FormII({ addTobuy, deleteTobuy }) {
             />
             <Button
             variant="text" /*</div>onClick={handleClickButtom}*/
-            onClick={() => tobuyCreate(values)} ><img src="./imgs/botao.png" alt="botão de adicionar" /></Button>   
+            onClick={() => tobuyCreate(values)} ><img src="./imgs/botao.png" alt="botão de adicionar" /></Button>
             {/*<Button variant="text"
             className='register--button'
-            onClick={handleClickButtom}><img src="./imgs/botao.png" alt="" /></Button>
+  onClick={handleClickButtom}><img src="./imgs/botao.png" alt="" /></Button>*/}
             {/*<button className='delete'>Deletar</button>*/}
         </div>
       </Paper>    

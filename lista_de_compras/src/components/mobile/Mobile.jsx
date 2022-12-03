@@ -17,43 +17,7 @@ import CorpoII from '../CorpoII/CorpoII'
 Modal.setAppElement('#root')
 
 function Mobile() {    
-
-  const [values, setValues] = useState();  
-  
-
-  const handleChangeValues = (value) => {
-    setValues((prevValue) => ({
-      ...prevValue,
-      [value.target.name]: value.target.value,          
-    }));
-  };
-
-  const handleClickButtom = () => {    
-    Axios.post("http://localhost:3001/produto/insert", {
-      produto:values.produto,
-    }).then((response)=>{
-      console.log(response)
-    })
-    
-  }
-   
-  useEffect (() => {
-    axios.get("http://localhost:3001/produto/find")
-  })
-
-  const ClickDelete = () => {
-    Axios.post("http://localhost:3001/produto/delete", {
-      produto:values.produto,
-    }).then((response) => {
-      console.log(response)
-    })        
-  }
-
-  useEffect (() => {
-    axios.get("http://localhost:3001/produto/delete")
-  })     
-
-  
+       
   const [modalIsOpen, setIsopen] = useState(false)
   
     function handleOpenModal() {

@@ -59,10 +59,9 @@ function App() {
       <div className="App">
           <div className='mobile'><Mobile/></div>                  
         <div className='desktopPage'>
-          <Cabecalho/>  
-          <a href="/lista">  </a>  
-          <div>
-            <img src=".././src/assets/carrinho.png" alt="" />
+          <Cabecalho/>            
+          <div>            
+            <a href="/lista"> <img src=".././src/assets/carrinho.png" alt="" /> </a>    
           </div>
           <Corpo/>
           <div id='second'><Second/></div>

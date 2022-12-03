@@ -28,7 +28,9 @@ export default function BuyList({ tobuy, deleteTobuy, editTobuy} ) {
     dialogHandler={dialogHandler} 
     tobuy={tobuy} 
     />
-    <Paper style={{ boxSizing: "borderBox", height: "75px", width: "380px" ,borderRadius: "9px", padding: "0.5em 0em", backgroundColor: "#F5FF66"}}>     
+    <Paper style={{ boxSizing: "borderBox", height: "75px", 
+    width: "380px" ,borderRadius: "9px", padding: "0.5em 0em", 
+    backgroundColor: "#F5FF66"}}>     
     
       <ListItem                               
         secondaryAction={
