@@ -86,8 +86,8 @@ h1{
      display: flex;
      align-items: center;
      font-family: cursive;
-     gap: 20px;
-     padding-left: 20px;
+     gap: 2vw;
+     padding-left: 2vw;
  }
  
  .logo_esquerdo{

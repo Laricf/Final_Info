@@ -89,7 +89,6 @@ function second_page() {
       <div className='lista_2' >
        <h1 className='texto_1'>SUA LISTA DE COMPRAS</h1>     
       </div>
-
     </div>
   )
 }
