@@ -7,7 +7,11 @@ var db = mysql.createPool({
     user: "ufiwipddw1qhlebr",
     password: "wOOoga7uXdHwt2N0GZMl",
     database: "bnd5dssud6aytjfy9grh",
+<<<<<<< HEAD
+    port: 3306
+=======
     port: 3306,
+>>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
 })
 
 module.exports = {

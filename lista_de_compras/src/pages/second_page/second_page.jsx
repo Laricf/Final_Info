@@ -6,13 +6,29 @@ import Axios from 'axios';
 import { ConstructionOutlined } from '@mui/icons-material';
 import axios from 'axios';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+<<<<<<< HEAD
+import Mobile from '../mobile/Mobile'
+
+=======
 import Mobile from '../../components/mobile/Mobile'
+>>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
 import Form from '../../components/Form';
 import { Container} from '@mui/system';
 import { List } from '@mui/material';
 import BuyList from '../../components/BuyList';
 import Home_desk from "../../components/Home_2"
 
+<<<<<<< HEAD
+
+
+
+
+
+
+function App() {    
+
+
+=======
 function second_page() {    
 
   const [values, setValues] = useState();  
@@ -51,6 +67,7 @@ function second_page() {
   })     
 
   
+>>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
   return ( 
     <div className="App_2">
       <div className='mobile'><Mobile/></div>                  
@@ -89,8 +106,16 @@ function second_page() {
       <div className='lista_2' >
        <h1 className='texto_1'>SUA LISTA DE COMPRAS</h1>     
       </div>
+<<<<<<< HEAD
+
+=======
+>>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
     </div>
   )
 }
 
+<<<<<<< HEAD
+export default App
+=======
 export default second_page
+>>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8

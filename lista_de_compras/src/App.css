@@ -36,8 +36,13 @@ h1{
 .cabeca_primeiro{
     display: flex;
     justify-content: flex-end;
+<<<<<<< HEAD
+    align-items: center;    
+    gap: 2%;
+=======
     align-items: center;  
     gap: 4%;
+>>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
     height:40px;
     width: 100%;
     color: #699429;
@@ -68,8 +73,8 @@ h1{
     display: flex;
     flex-direction: row;
     padding-top: 3px;
-    padding-right: 10px;
-    padding-left: 5px;
+    padding-right: 20px;
+    
 }
  .cabeca_segundo{
      background-color: #5E3E5C;
@@ -107,10 +112,15 @@ h1{
      display: flex;
      flex-direction: row;  
      align-items: center;   
+<<<<<<< HEAD
+     width: 100px;
+     padding-right: 20px;
+=======
      width: 8vw;
      padding-right: 2vw;
      gap: 6px;
      color: white;
+>>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
      
  }
  .opcoes {
@@ -153,6 +163,14 @@ h1{
      
  }
  .produtos{
+<<<<<<< HEAD
+     display: grid;
+     grid-template-columns: auto auto auto;
+     grid-template-rows: 100px;
+     gap: 30px;
+     padding-left: 40px;
+     justify-content: center;  
+=======
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 100px;
@@ -160,6 +178,7 @@ h1{
     padding-left: 40px;
     justify-content: center;            
      
+>>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
  }
  .nome_produto{
      display: flex;
@@ -182,7 +201,13 @@ h1{
 
  .footer{
      display: flex;     
+<<<<<<< HEAD
+     align-items: flex-start;     
+     justify-content: space-around;   
+     padding-top: 15px;
+=======
      justify-content: space-between; 
+>>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
      height: 270px;
      width: 99vw;
      background-color: #F5FF66;       
@@ -193,10 +218,16 @@ h1{
  .img_produto{
      display: flex;
      align-items: center;
+<<<<<<< HEAD
+     flex-direction: column;
+     padding-top: 15px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+=======
      flex-direction: column;  
      font-size: 15px;                    
      font-family: 'Raleway', sans-serif;
      font-weight: 600;
+>>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
      border-radius: 4px;
      margin-right: 1%;
      padding-top: 15px;  
@@ -208,10 +239,35 @@ h1{
  #second, #Yellow {
     display: none;
  }
+<<<<<<< HEAD
+ .caixa_produto{
+    display: grid;
+<<<<<<< Updated upstream
+    grid-template-columns: 50% 50% 50%;
+    grid-template-rows: 50%;
+    gap: 30px;
+    padding-left:  -50%;
+ }
+ 
+=======
+    grid-template-columns: 40% 40% 40% ;    
+    gap: 4%;
+    padding-right: 10%;
+}
+   
+ #second {
+    display: none;
+ }
+
+
+>>>>>>> Stashed changes
+ @media (max-width:850px) {
+=======
 
 
 
  @media (max-width:850px) {   
+>>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
     
     .mobile {
         display: contents;
@@ -219,6 +275,10 @@ h1{
     }    
 
     body {
+<<<<<<< HEAD
+        background-image: url('../imgs/lapis2.jpg'); width: 100vw; height: 100vh;
+        background-size: cover;
+=======
         background-size: cover;
         background-image: url('../imgs/medium.jpg'); width: 100vw; height: 100vh;
 
@@ -226,6 +286,7 @@ h1{
 
     .head {
         margin-bottom: 30px;
+>>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
     }
 
     .desktopPage {
