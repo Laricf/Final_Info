@@ -24,7 +24,14 @@ function App() {
           <div className='mobile'><Mobile/></div>                  
         <div className='desktopPage'>
           <Cabecalho/>  
+<<<<<<< Updated upstream
           <a href="/lista">Lista</a>               
+=======
+          <a href="/lista">  </a>  
+          <div>
+            <img src="" alt="" />
+          </div>
+>>>>>>> Stashed changes
           <Corpo/>
           <div id='second'><Second/></div>
         </div>
