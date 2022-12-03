@@ -38,7 +38,6 @@ export default function Home() {
             <List sx={{ marginTop: "0%"}}>
                 {tobuys.map((tobuy) => (
                     <div key={tobuy.id} style={{marginTop:"5em"}} >
-                        <BuyList editTobuy={editTobuy} tobuy={tobuy} deleteTobuy={deleteTobuy} />
                     </div>
                 ))}
                 {/*<BuyList/> */}

@@ -7,10 +7,10 @@ import Checkbox from '@mui/material/Checkbox';
 import IconButton from '@mui/material/IconButton';
 import { Paper } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
-import EditText from './EditText';
+import EditText from '../EditText'
 
 
-export default function BuyList({ tobuy, deleteTobuy, editTobuy} ) {  
+export default function BuyListY({ tobuy, deleteTobuy, editTobuy} ) {  
 
   const [openDialog, setOpenDialog] = useState(false); 
 
@@ -24,10 +24,10 @@ export default function BuyList({ tobuy, deleteTobuy, editTobuy} ) {
     editTobuy={editTobuy} 
     open={openDialog} 
     dialogHandler={dialogHandler} 
-    tobuy={tobuy} 
+    tobuy={tobuy}     
     />
     <Paper style={{ boxSizing: "borderBox", height: "75px", 
-    width: "380px" ,borderRadius: "9px", padding: "0.5em 0em", 
+    width: "380px", borderRadius: "9px", padding: "0.5em 0em", 
     backgroundColor: "#F5FF66"}}>     
     
       <ListItem                               

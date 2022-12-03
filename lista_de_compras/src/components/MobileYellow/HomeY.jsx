@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import Form from '../components/Form';
+import Form from './Form_mobile';
 import { Container} from '@mui/system';
 import { List } from '@mui/material';
-import BuyList from '../components/BuyList';
-import '../App.css'
+import BuyListY from '../BuyList'
+import './App.css'
 
-export default function Home() {
+export default function HomeY() {
     
 
     const [tobuys, setTobuys] = useState([]);
@@ -32,18 +32,19 @@ export default function Home() {
     };
 
   return (
-    <Container  style={{ margin: "auto", minWidth: "160px", maxWidth: "600px"}}>        
-        <div id='texto' style={{width: "40vw"}}>
+    <Container  style={{ marginLeft: "20%", marginTop: "45px", width: "70vw"}}>        
+        <div id='texto' style={{width: "296px"}}>
             <Form addTobuy={addTobuy} />
-            <List sx={{ marginTop: "0%"}}>
+            <List className='lista_mobi' >
                 {tobuys.map((tobuy) => (
-                    <div key={tobuy.id} style={{marginTop:"5em"}} >
-                        <BuyList editTobuy={editTobuy} tobuy={tobuy} deleteTobuy={deleteTobuy} />
+                    <div key={tobuy.id} style={{marginTop:"1em", marginLeft: "-16%", 
+                    }} >
+                        <BuyListY editTobuy={editTobuy} tobuy={tobuy} deleteTobuy={deleteTobuy}/>
                     </div>
                 ))}
                 {/*<BuyList/> */}
             </List>
         </div>                
-    </Container> 
+    </Container>
   )
 }

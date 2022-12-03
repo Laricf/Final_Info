@@ -4,13 +4,13 @@ const app = express();
 const cors = require("cors");
 
 
-app.use(cors())
+app.use(cors({credentials: true, origin: 'http://localhost:5173'}));
 app.use(express.json());
 
 const ControllerUsers = require("./controller/ControllerProduto");
 
 app.post('/produto/insert',      ControllerUsers.insert);
-app.delete('/produto/delete',    ControllerUsers.delete);
+/*app.delete('/produto/delete',    ControllerUsers.delete);*/
 app.get('/produto/find',         ControllerUsers.find)
 
 
