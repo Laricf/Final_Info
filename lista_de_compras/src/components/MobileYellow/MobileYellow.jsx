@@ -78,6 +78,7 @@ function MobileYellow(handleOpenModal, handleCloseModal) {
   return ( 
     <div className="AppY">           
       <div className='headY' style={{ height: "50px"}}>
+        <h2>Oi, Lari</h2>
         <img id='tracos' src="./imgs/tracos.png" alt="ícone de opções" />
         <h1 id='buyList' style={{ textAlign: "center", fontSize: "100%" }}>LISTA DE COMPRAS</h1> 
         <AccountCircleIcon style={{color: "#F5FF66"}}/>         
