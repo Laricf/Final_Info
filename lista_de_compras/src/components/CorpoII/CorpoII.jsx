@@ -13,14 +13,14 @@ function CorpoII() {
   return ( 
     <div>
       <div id='corpoII'>          
-          <div className="produtosII">
-              <p className='nome_produtoII'>Papel Higiênico</p>
-              <p className='nome_produtoII'>Feijão</p>
-              <p className='nome_produtoII'>Detergente</p>
-              <p className='nome_produtoII'>Ovos</p>
-              <p className='nome_produtoII'>Protetor Solar</p>
-              <p className='nome_produtoII'>Maçã</p>
-          </div>
+      <div className="produtosII">
+            <button className='nome_produtoII'>Papel Higiênico</button>
+            <button className='nome_produtoII'>Feijão</button>
+            <button className='nome_produtoII'>Detergente</button>
+            <button className='nome_produtoII'>Ovos</button>
+            <button className='nome_produtoII'>Protetor Solar</button>
+            <button className='nome_produtoII'>Maçã</button>
+        </div>
           <div>
               <h2 id='talvez'>TALVEZ VOCÊ TAMBÉM PRECISE...</h2>
           </div>

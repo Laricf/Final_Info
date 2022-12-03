@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <Container  style={{ margin: "auto", minWidth: "160px", maxWidth: "600px"}}>        
-        <div id='texto' style={{width: "650px"}}>
+        <div id='texto' style={{width: "40vw"}}>
             <Form addTobuy={addTobuy} />
             <List sx={{ marginTop: "0%"}}  >
                 {tobuys.map((tobuy) => (

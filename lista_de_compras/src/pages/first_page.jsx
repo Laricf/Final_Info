@@ -60,9 +60,6 @@ function App() {
           <div className='mobile'><Mobile/></div>                  
         <div className='desktopPage'>
           <Cabecalho/>            
-          <div>            
-            <a href="/lista"> <img src=".././src/assets/carrinho.png" alt="" /> </a>    
-          </div>
           <Corpo/>
           <div id='second'><Second/></div>
           <div id="Yellow"><MobileYellow/></div>

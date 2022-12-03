@@ -24,9 +24,9 @@ h1{
 #suaLista {
     font-family: 'Mochiy Pop One', sans-serif;
     font-size: 17px;            
-    
-    width: 300px;   
+    width: 25vw;   
     height: 33px;
+    color: white;
 }
 
 .mobile {
@@ -36,7 +36,7 @@ h1{
 .cabeca_primeiro{
     display: flex;
     justify-content: flex-end;
-    align-items: center;    
+    align-items: center;  
     gap: 4%;
     height:40px;
     width: 100%;
@@ -78,8 +78,8 @@ h1{
      height: 80px;
      width: 100%;
      display: flex;
-     align-items: center;     
-     color: white;
+     align-items: center;  
+    text-decoration: none;
      
  }
  .logo_direito{
@@ -94,16 +94,23 @@ h1{
      display: flex;
      align-items: center;
      justify-content: space-between;
-     gap: 15px;
+     padding-right: 3vw;
+ }
+ .lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 10vw;
+    color: white;
  }
  .conta{    
      display: flex;
      flex-direction: row;  
      align-items: center;   
-     width: 70px;
-     width: 115px;
-     padding-right: 20px;
+     width: 8vw;
+     padding-right: 2vw;
      gap: 6px;
+     color: white;
      
  }
 
@@ -111,7 +118,7 @@ h1{
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-right: 135px;    
+    padding-left: 5%;   
  }
 
 .inferior {
@@ -124,10 +131,10 @@ h1{
     /*font-family: 'Rum Raisin', sans-serif;*/
     font-family: 'Mochiy Pop One', sans-serif;
     font-weight: 100;        
-    font-size: 40px;    
+    font-size: 3vw;    
     color: black;
-    height: 80px;
-    width: 700px;    
+    height: 7vw;
+    width: 50vw;    
     align-items: center;
     background-color: rgba(245, 255, 102, 0.7);
     border-radius: 9px; 
@@ -151,7 +158,7 @@ h1{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 100px;
-    gap: 30px;     
+    gap: 2vw;     
     padding-left: 40px;
     justify-content: center;            
      
@@ -174,22 +181,15 @@ h1{
     transform: scale(1.1);
     transition: all 0.5s;
   }
-.footer-wrapper{
-    overflow-x: auto;
-}
- .imagens{
-    display: flex;     
-    flex-flow: row nowrap;  
-    gap: 15px; 
- }
+
  .footer{
      display: flex;     
-     flex-flow: row nowrap;  
-     gap: 20px;  
+     justify-content: space-between; 
      height: 270px;
-     width: 100vw;
+     width: 99vw;
      background-color: #F5FF66;       
      box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+     overflow: auto;
  }
  
  .img_produto{
@@ -200,11 +200,9 @@ h1{
      font-family: 'Raleway', sans-serif;
      font-weight: 600;
      border-radius: 4px;
-     padding-left: 12px;
-     gap: 10px;   
+     margin-right: 1%;
      padding-top: 15px;  
  }
- 
    
  #second {
     display: none;

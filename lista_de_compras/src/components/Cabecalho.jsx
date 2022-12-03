@@ -26,8 +26,8 @@ function Cabecalho() {
             </div>
             <div className='cabeca_segundo'>
               <div className='logo_direito'>
-                <p id='suaLista'>SUA LISTA DE COMPRAS WEB  </p>
-                <img id='listaVerde' src="./src/assets/lista.png" alt="Lista" />
+                <a href="/lista"><p id='suaLista'>SUA LISTA DE COMPRAS WEB  </p></a> 
+                <a href="/lista"><img id='listaVerde' src="./src/assets/lista.png" alt="Lista" /></a>
               </div>
               <Home/>
               <div className='logo_esquerdo'>
