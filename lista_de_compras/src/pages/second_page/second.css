@@ -1,6 +1,6 @@
 
 .lista_2{
-
+   
     height: 80px;
     width: 700px;    
     align-items: center;
@@ -14,9 +14,10 @@
  }
 .texto_1{
    display: flex;
-   font-family: cursive;
+   font-family: 'Mochiy Pop One', sans-serif;
+   font-weight: 100;        
+   font-size: 3vw; 
    color: rgb(8, 0, 0);
-   font-size: 40px;
    padding-top: 15px;
 }
 .App_2{
