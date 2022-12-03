@@ -11,6 +11,10 @@ import Modal from 'react-modal';
 import FormII from '../FormII';
 /*import main from '../../../src/main'*/
 import Second from '../SecondMobile/Second'
+import HomeY from './HomeY';
+import BuyListY from './BuyListY';
+
+
 
 
 Modal.setAppElement('#root')
@@ -73,12 +77,12 @@ function MobileYellow(handleOpenModal, handleCloseModal) {
 
   return ( 
     <div className="AppY">           
-      <div className='head' style={{ height: "50px"}}>
+      <div className='headY' style={{ height: "50px"}}>
         <img id='tracos' src="./imgs/tracos.png" alt="ícone de opções" />
         <h1 id='buyList' style={{ textAlign: "center", fontSize: "100%" }}>LISTA DE COMPRAS</h1> 
         <AccountCircleIcon style={{color: "#F5FF66"}}/>         
       </div>
-      <Home/>      
+      <HomeY/> 
                
     </div>
   )

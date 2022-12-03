@@ -21,7 +21,7 @@ h1 {
     height: 100vh;
 }
 
-.head {
+.headY {
     display: flex;    
     align-items: center;    
     justify-content: center;
@@ -40,9 +40,7 @@ h1 {
     padding-bottom: 60px;
 }
 
-.estilo {
-   
-}
+
 
 
 
