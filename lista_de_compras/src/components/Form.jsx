@@ -38,7 +38,8 @@ export default function Form({ addTobuy, deleteTobuy }) {
   }*/}
  
   return (               
-      <Paper style={{ padding: "0.5em", borderRadius: "10px", backgroundColor: "white"}}>
+      <Paper style={{ padding: "0.5em", borderRadius: "10px", 
+      backgroundColor: "white"}}>
         <div id='textfield' style={{ display:"flex", justifyContent: "center"}}>
             <TextField
             type="text"
@@ -47,7 +48,7 @@ export default function Form({ addTobuy, deleteTobuy }) {
             label="o que eu desejo?"
             variant="outlined"
             onChange={(e) => setValues(e.target.value)}
-            fullWidth
+            fullWidth            
             />
             <Button
             variant="text" 

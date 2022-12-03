@@ -35,10 +35,9 @@ export default function HomeY() {
     <Container  style={{ marginLeft: "20%", marginTop: "45px"}}>        
         <div id='texto' style={{width: "296px"}}>
             <Form addTobuy={addTobuy} />
-            <List sx={{ }}  >
+            <List sx={{}} >
                 {tobuys.map((tobuy) => (
-                    <div key={tobuy.id} style={{marginTop:"1em", marginLeft: "-16%", 
-                    }} >
+                    <div key={tobuy.id} style={{marginTop:"1em", marginLeft: "-16%"}} >
                         <BuyListY editTobuy={editTobuy} tobuy={tobuy} deleteTobuy={deleteTobuy}/>
                     </div>
                 ))}

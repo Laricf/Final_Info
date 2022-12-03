@@ -35,10 +35,10 @@ export default function Home() {
     <Container  style={{ margin: "auto", minWidth: "160px", maxWidth: "600px"}}>        
         <div id='texto' style={{width: "40vw"}}>
             <Form addTobuy={addTobuy} />
-            <List sx={{ marginTop: "0%"}}  >
+            <List sx={{ marginTop: "0%"}}>
                 {tobuys.map((tobuy) => (
                     <div key={tobuy.id} style={{marginTop:"5em"}} >
-                        <BuyList editTobuy={editTobuy} tobuy={tobuy} deleteTobuy={deleteTobuy}  />
+                        <BuyList editTobuy={editTobuy} tobuy={tobuy} deleteTobuy={deleteTobuy} />
                     </div>
                 ))}
                 {/*<BuyList/> */}
