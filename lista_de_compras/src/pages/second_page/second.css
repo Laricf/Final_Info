@@ -1,8 +1,8 @@
 
 .lista_2{
    
-    height: 80px;
-    width: 700px;    
+    height: 8vw;
+    width: 70vw;    
     align-items: center;
     background-color: rgba(245, 255, 102, 0.7);
     border-radius: 9px; 
@@ -15,7 +15,7 @@
 .texto_1{
    display: flex;
    font-family: 'Mochiy Pop One', sans-serif;
-   font-weight: 100;        
+   font-weight: 100;    
    font-size: 3vw; 
    color: rgb(8, 0, 0);
    padding-top: 15px;
