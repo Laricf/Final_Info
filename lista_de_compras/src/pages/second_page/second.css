@@ -24,3 +24,10 @@
    background-image: url('../imgs/bd_second_desk.jpg'); width: 100vw; height: 200vh; opacity: 0.85;
    
 }
+.caixa_produto{
+   display: grid;
+   grid-template-columns: 40% 40% 40%;
+   grid-template-rows: 50%;
+   gap: 7%;
+   padding-left:  0;
+}

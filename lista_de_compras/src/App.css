@@ -174,18 +174,24 @@ h1{
     transform: scale(1.1);
     transition: all 0.5s;
   }
-
- 
+.footer-wrapper{
+    overflow-x: auto;
+}
+ .imagens{
+    display: flex;     
+    flex-flow: row nowrap;  
+    gap: 15px; 
+ }
  .footer{
      display: flex;     
-     align-items: flex-start;     
-     justify-content: space-around;   
-     
+     flex-flow: row nowrap;  
+     gap: 20px;  
      height: 270px;
      width: 100vw;
      background-color: #F5FF66;       
      box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
  }
+ 
  .img_produto{
      display: flex;
      align-items: center;
@@ -198,15 +204,12 @@ h1{
      gap: 10px;   
      padding-top: 15px;  
  }
- .caixa_produto{
-    display: grid;
-    grid-template-columns: 50% 50% 50%;
-    grid-template-rows: 50%;
-    gap: 30px;
-    padding-left:  -50%;
- }
+ 
    
  #second {
+    display: none;
+ }
+ #second, #Yellow {
     display: none;
  }
 

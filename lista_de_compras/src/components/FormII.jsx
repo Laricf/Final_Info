@@ -40,7 +40,9 @@ export default function FormII({ addTobuy, deleteTobuy }) {
   }
  
   return (               
-      <Paper style={{ padding: "0.5em", borderRadius: "10px", backgroundColor: "white", width: "77vw"}}>
+      <Paper style={{ padding: "0.5em", borderRadius: "9px", 
+      backgroundColor: "white", width: "50vw", marginTop: "19px",
+      marginLeft: "20%", marginBottom: "30px"}}>
         <div id='textfield' style={{ display:"flex", justifyContent: "center"}}>
             <TextField
             type="text"
@@ -53,8 +55,8 @@ export default function FormII({ addTobuy, deleteTobuy }) {
             />
             <Button
             variant="text" /*</div>onClick={handleClickButtom}*/
-            onClick={() => tobuyCreate(values)} ><img src="./imgs/botao.png" alt="botão de adicionar" /></Button>
-            <Button variant="text"
+            onClick={() => tobuyCreate(values)} ><img src="./imgs/botao.png" alt="botão de adicionar" /></Button>   
+            {/*<Button variant="text"
             className='register--button'
             onClick={handleClickButtom}><img src="./imgs/botao.png" alt="" /></Button>
             {/*<button className='delete'>Deletar</button>*/}

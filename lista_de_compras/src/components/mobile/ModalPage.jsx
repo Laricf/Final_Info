@@ -76,7 +76,7 @@ function ModalPage({handleOpenModal, handleCloseModal}) {
           <div className='estilo'>            
             <button onClick={handleCloseModal}>Close</button>                        
           </div>            
-          </Modal>
+        </Modal>
         </div>                         
     </div>
   )

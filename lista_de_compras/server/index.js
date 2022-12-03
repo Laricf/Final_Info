@@ -4,7 +4,7 @@ const app = express();
 const cors = require("cors");
 
 
-app.use(cors())
+app.use(cors({credentials: true, origin: 'http://localhost:5173'}));
 app.use(express.json());
 
 const ControllerUsers = require("./controller/ControllerProduto");
@@ -24,7 +24,7 @@ app.post("/produto", (req, res) => {
     const {produto} = req.body;
     console.log(produto)
 
-    const response = "INSERT INTO mercado (produto) VALUES ?";
+    const response = "INSERT INTO compras (produto) VALUES ?";
 
     db.query(response, [produto], (err, result) => {
         console.log("err");

@@ -4,12 +4,13 @@
     padding: 0;    
 }
 
-#corpoII {
+/*#corpoII {
     position: relative;
     padding: 15px;
     max-width: 640px;
     margin: 0 auto;
-}
+    
+}*/
 
 .footer{
     display: flex;
@@ -29,7 +30,7 @@
 } 
 
 .gallery.wrapper {
-    overflow-x: auto;
+    overflow-x: auto;    
 }
 
 .gallery {
@@ -38,47 +39,20 @@
     /*wrap = quebre quando não couber mais; 
     nowrap = matenha sempre lado a lado*/
     gap: 15px;
-}
-
-.arrow-left, .arrow-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 20px;
-    line-height: 250px;
-    width: 40px;
-    text-align: center;
-    color: white;
-    cursor: pointer;
-    border: none;
-    background: linear-gradient(to left, transparent 0%, black 200%);      
-    opacity: 0.1;
-    transition: all 600ms ease-in-out;
-}
-
-.arrow-right {
-    position: absolute;    
-    left: auto;
-    right: 0;    
-    background: linear-gradient(to right, transparent 0%, black 200%);    
-}
-
-.arrow-left:hover, .arrow-right:hover {
-    opacity: 1;
+    
 }
 
 
 
 .produtosII{
     display: grid;
-    grid-template-columns: 70% 50%;
-    grid-template-rows: 20%;
+    grid-template-columns: 20% 50%;
+    grid-template-rows: 20%;    
     column-gap: 15%;     
-    row-gap: 30px;
-    padding-left: 10%;    
-    align-items: center;         
+    row-gap: 30px;     
+    align-items: center;       
+    justify-content: center;
+    padding-left: 55px;
  }
 
  .nome_produtoII{

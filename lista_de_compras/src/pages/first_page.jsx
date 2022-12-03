@@ -12,6 +12,7 @@ import Cabecalho from '../components/Cabecalho'
 import Corpo from '../components/Corpo'
 import Second from '../components/SecondMobile/Second'
 import {Link, Routes, Route} from "react-router-dom"
+import MobileYellow from "../components/MobileYellow/MobileYellow"
 
 
 
@@ -59,9 +60,13 @@ function App() {
           <div className='mobile'><Mobile/></div>                  
         <div className='desktopPage'>
           <Cabecalho/>  
-          <a href="/lista">Lista</a>               
+          <a href="/lista">  </a>  
+          <div>
+            <img src=".././src/assets/carrinho.png" alt="" />
+          </div>
           <Corpo/>
           <div id='second'><Second/></div>
+          <div id="Yellow"><MobileYellow/></div>
         </div>
       </div>
       

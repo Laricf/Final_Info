@@ -15,9 +15,8 @@ export default function Form({ addTobuy, deleteTobuy }) {
     setId(id + 1);
     addTobuy(tobuyObj);
     document.getElementById("outlined-basic").value = null; 
-    
     Axios.post("http://localhost:3001/produto/insert", {
-      produto:values.produto,
+      produto:values,
     }).then((response)=>{
       console.log(response)
     })
@@ -31,13 +30,13 @@ export default function Form({ addTobuy, deleteTobuy }) {
     }));
   }; 
   
-  const handleClickButtom = () => {    
+  {/*const handleClickButtom = () => {    
     Axios.post("http://localhost:3001/produto/insert", {
-      produto:values.produto,
+      produto:values,
     }).then((response)=>{
       console.log(response)
     })
-  }
+  }*/}
  
   return (               
       <Paper style={{ padding: "0.5em", borderRadius: "10px", backgroundColor: "white"}}>
@@ -54,7 +53,7 @@ export default function Form({ addTobuy, deleteTobuy }) {
             <Button
             variant="text" /*</div>onClick={handleClickButtom}*/
             onClick={() => tobuyCreate(values)} ><img src="./imgs/botao.png" alt="botão de adicionar" /></Button>
-            <Button variant="text"
+            {/*<Button variant="text"
             className='register--button'
             onClick={handleClickButtom}><img src="./imgs/botao.png" alt="" /></Button>
             {/*<button className='delete'>Deletar</button>*/}

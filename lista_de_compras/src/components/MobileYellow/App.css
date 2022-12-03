@@ -13,14 +13,21 @@ h1 {
     color: white;
 }
 
+.AppY {    
+    /*background-image: url('../../../imgs/lapis.jpg');*/
+    background-image: url('../../../imgs/LapisGrandeI.jpg');
+    background-size: cover;
+    width: 78vw;
+    height: 100vh;
+}
 
-.head {
+.headY {
     display: flex;    
     align-items: center;    
     justify-content: center;
     justify-content: space-around;
     background-color: #5E3E5C;        
-    width: 100vw;    
+    width: 78vw;    
 }
 
 #img {
@@ -32,11 +39,9 @@ h1 {
     justify-content: center;    
     padding-bottom: 60px;
 }
-
-.estilo {
-   
-}
-
+button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;}
 
 
 

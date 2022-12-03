@@ -27,6 +27,7 @@ function Corpo() {
             <h2>TALVEZ VOCÊ TAMBÉM PRECISE...</h2>
         </div>
         <div className='footer' >
+          <div className='imagens' >
             <p className='img_produto'> <img src="./src/assets/liqui.png" alt="LiquclassNameificador" /> Liquidificador</p>
             <p className='img_produto'> <img src="./src/assets/bate.png" alt="Batedeira" /> Batedeira</p>
             <p className='img_produto'> <img src="./src/assets/ferro.png" alt="Ferro de passar roupa" /> Ferro de passar roupa</p>
@@ -34,6 +35,7 @@ function Corpo() {
             <p className='img_produto'> <img src="./src/assets/prod_beleza.png" alt="Produtos de beleza" /> Produtos de beleza</p>
             <p className='img_produto'> <img src="./src/assets/plantas.png" alt="Plantas" /> Plantas</p>
             <p className='img_produto'> <img src="./src/assets/ferramenta.png" alt="Ferramentas" /> Ferramentas</p>
+          </div>
         </div>
     </div>
   )

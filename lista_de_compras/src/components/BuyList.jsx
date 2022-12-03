@@ -28,9 +28,9 @@ export default function BuyList({ tobuy, deleteTobuy, editTobuy} ) {
     dialogHandler={dialogHandler} 
     tobuy={tobuy} 
     />
-    <Paper style={{ borderRadius: "10px", padding: "0.5em 0em", backgroundColor: "#F5FF66"}}> 
+    <Paper style={{ boxSizing: "borderBox", height: "75px", width: "380px" ,borderRadius: "9px", padding: "0.5em 0em", backgroundColor: "#F5FF66"}}>     
     
-      <ListItem               
+      <ListItem                               
         secondaryAction={
           <IconButton edge="end" aria-label="delete" onClick={() => deleteTobuy(tobuy.id)}>
             <DeleteIcon />
@@ -49,7 +49,8 @@ export default function BuyList({ tobuy, deleteTobuy, editTobuy} ) {
           </ListItemIcon>
           <ListItemText primary={tobuy.values} 
           onClick={() => setOpenDialog(true)} 
-          style={{ textTransform: "uppercase"}}/>
+          style={{ textTransform: "uppercase"}}          
+          />
         </ListItemButton>
       </ListItem>
     </Paper>

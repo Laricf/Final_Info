@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "nodemon index.js"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -20,7 +21,9 @@
     "modal": "^1.2.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
+    "node": "^19.2.0",
     "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
