@@ -1,14 +1,9 @@
 
 .lista_2{
-
-
     height: 80px;
     width: 700px;    
-
-   
     height: 8vw;
     width: 70vw;    
-
     align-items: center;
     background-color: rgba(245, 255, 102, 0.7);
     border-radius: 9px; 
@@ -20,11 +15,9 @@
  }
 .texto_1{
    display: flex;
-
    font-family: cursive;
    color: rgb(8, 0, 0);
    font-size: 40px;
-
    font-family: 'Mochiy Pop One', sans-serif;
    font-weight: 100;    
    font-size: 3vw; 
@@ -34,15 +27,13 @@
 }
 .App_2{
    background-size: cover;
-   background-image: url('../imgs/bd_second_desk.jpg'); width: 100vw; height: 200vh; opacity: 0.85;
-   
-
+   background-image: url('../imgs/bd_second_desk.jpg'); width: 100vw; height: 200vh; opacity: 0.85; 
 
 }
+
+/*
 .caixa_produto{
    display: grid;
-   grid-template-columns: 40% 40% 40%;   
-   gap: 7%;
-   padding-left:  0;
-
-}
+   grid-template-columns: 40% 40% 40%;    
+       
+}*/

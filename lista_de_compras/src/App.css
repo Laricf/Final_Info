@@ -152,8 +152,6 @@ h1{
      
  }
  .produtos{
-
-
      display: grid;
      grid-template-columns: auto auto auto;
      grid-template-rows: 100px;
@@ -213,11 +211,10 @@ h1{
 
  .caixa_produto{
     display: grid;
-
-    grid-template-columns: 50% 50% 50%;
-    grid-template-rows: 50%;
-    gap: 30px;
-    padding-left:  -50%;
+    grid-template-columns: 30% 30% 30%;    
+    column-gap: 35%;    
+    padding-right: 150px;
+    
  }
  
 

@@ -50,7 +50,7 @@ function App() {
 
 
   return (
-      <div className="App">
+      <div className="App">        
           <div className='mobile'><Mobile/></div>                  
         <div className='desktopPage'>
 

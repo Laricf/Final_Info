@@ -29,7 +29,7 @@ function App() {
             <p> <img src="./src/assets/comp.png" alt="Compartilhar" />  Compatilhar</p>
           </div>
         </div>
-        <div className='cabeca_segundo'>
+        <div className='cabeca_segundo' style={{}}>
           <div className='logo_direito'>
             <p id='suaLista'>SUA LISTA DE COMPRAS WEB  </p>
             <img id='listaVerde' src="./src/assets/lista.png" alt="Lista" />
