@@ -16,8 +16,7 @@ h1 {
 .AppY {    
     /*background-image: url('../../../imgs/lapis.jpg');*/
     background-image: url('../../../imgs/LapisGrandeI.jpg');
-    background-size: cover;
-    
+    background-size: cover;    
     height: 100vh;
 }
 
@@ -40,7 +39,7 @@ h1 {
     padding-bottom: 60px;
 }
 .lista_mobi{
-    width: 10vw;
+    
 }
 
 

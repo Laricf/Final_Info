@@ -20,17 +20,9 @@ Modal.setAppElement('#root')
 
 function MobileYellow(handleOpenModal, handleCloseModal) {    
 
-  const [modalIsOpen, setIsopen] = useState(false)
+  const [values, setValues] = useState();  
   
-    function handleOpenModal() {
-      setIsopen(true)         
-    }
 
-<<<<<<< HEAD:lista_de_compras/src/pages/mobile/Mobile.jsx
-    function handleCloseModal() {
-      setIsopen(false)       
-    }
-=======
   const handleChangeValues = (value) => {
     setValues((prevValue) => ({
       ...prevValue,
@@ -81,15 +73,7 @@ function MobileYellow(handleOpenModal, handleCloseModal) {
         right: 'auto',        
       }
     }
->>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8:lista_de_compras/src/components/MobileYellow/MobileYellow.jsx
 
-    const customStyle = {
-      content: {
-        top: '50%',
-        left: '50%',
-        right: 'auto',        
-      }
-    }
   return ( 
     <div className="AppY">           
       <div className='headY' style={{ height: "50px"}}>        
@@ -97,8 +81,9 @@ function MobileYellow(handleOpenModal, handleCloseModal) {
         <h1 id='buyList' style={{ textAlign: "center", fontSize: "100%" }}>LISTA DE COMPRAS</h1> 
         <AccountCircleIcon style={{color: "#F5FF66"}}/>         
       </div>
-      <HomeY/>
-    </div>  
+      <HomeY/> 
+               
+    </div>
   )
 }
 

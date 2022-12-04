@@ -4,7 +4,7 @@ import { Button, Paper, TextField } from '@mui/material';
 import '../App.jsx';
 
 
-export default function Form({ addTobuy, deleteTobuy }) {
+export default function FormY({ addTobuy, deleteTobuy }) {
 
   const [values, setValues] = useState(); 
   const [id, setId]  = useState(0)
@@ -44,9 +44,9 @@ export default function Form({ addTobuy, deleteTobuy }) {
             onChange={(e) => setValues(e.target.value)}
             fullWidth            
             />
-            <a href="/lista"><Button
+            <Button
             variant="text" 
-            onClick={() => tobuyCreate(values)}><img src="./imgs/botao.png" alt="botão de adicionar" /></Button> </a>           
+            onClick={() => tobuyCreate(values)}><img src="./imgs/botao.png" alt="botão de adicionar" /></Button>
         </div>
       </Paper>    
   )

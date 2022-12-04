@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Form from './Form_mobile';
+import Form from '../Form';
 import { Container} from '@mui/system';
 import { List } from '@mui/material';
 import BuyListY from '../BuyList'
@@ -45,6 +45,6 @@ export default function HomeY() {
                 {/*<BuyList/> */}
             </List>
         </div>                
-    </Container>
+    </Container> 
   )
 }

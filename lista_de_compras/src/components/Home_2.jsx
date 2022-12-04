@@ -1,19 +1,11 @@
 import React, { useState, useEffect } from 'react'
-<<<<<<< HEAD
-import Form from '../components/Form';
-=======
-import Form from '../pages/second_page/Form_second';
->>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
 import { Container} from '@mui/system';
 import { List } from '@mui/material';
 import BuyList from '../components/BuyList';
 import '../App.css'
+import Form from '../pages/second_page/Form_second'
 
-<<<<<<< HEAD
-export default function Home() {
-=======
 export default function Home_2() {
->>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
     
 
     const [tobuys, setTobuys] = useState([]);
@@ -40,20 +32,6 @@ export default function Home_2() {
     };
 
   return (
-<<<<<<< HEAD
-    <Container className="Caixa" /*maxWidth="xs"*/ style={{ margin: "auto", minWidth: "160px", maxWidth: "600px"}}> 
-    <div id='texto' style={{width: "550px"}}>     
-        <Form addTobuy={addTobuy}  />        
-        <List className='caixa_produto' sx={{ marginTop: "30%"}} style={{  marginLeft: "-250px"}} >
-            {tobuys.map((tobuy) => ( 
-                <div key={tobuy.id} style={{marginTop:"5em"}} >
-                    <BuyList editTobuy={editTobuy} tobuy={tobuy} deleteTobuy={deleteTobuy}/>
-                </div>
-            ))}     
-            {/*<BuyList/> */}
-        </List>   
-    </div>                   
-=======
     <Container /*maxWidth="xs"*/ style={{ margin: "auto", minWidth: "160px", maxWidth: "600px"}}>        
         <div id='texto' style={{width: "40vw"}}>
             <Form addTobuy={addTobuy}/>
@@ -66,7 +44,6 @@ export default function Home_2() {
                 {/*<BuyList/> */}
             </List>
         </div>                
->>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
     </Container> 
   )
 }

@@ -36,11 +36,7 @@ export default function FormII({ addTobuy, deleteTobuy }) {
             />
             <a href="/mobiyellow"><Button
             variant="text" /*</div>onClick={handleClickButtom}*/
-            onClick={() => tobuyCreate(values)} ><img src="./imgs/botao.png" alt="botão de adicionar" /></Button></a> 
-            {/*<Button variant="text"
-            className='register--button'
-  onClick={handleClickButtom}><img src="./imgs/botao.png" alt="" /></Button>*/}
-            {/*<button className='delete'>Deletar</button>*/}
+            onClick={() => tobuyCreate(values)} ><img src="./imgs/botao.png" alt="botão de adicionar" /></Button></a>             
         </div>
       </Paper>    
   )

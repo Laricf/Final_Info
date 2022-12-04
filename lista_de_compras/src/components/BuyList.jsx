@@ -27,8 +27,8 @@ export default function BuyList({ tobuy, deleteTobuy, editTobuy} ) {
     tobuy={tobuy} 
     />
     <Paper style={{ boxSizing: "borderBox", height: "75px", 
-    width: "380px" ,borderRadius: "9px", padding: "0.5em 0em", 
-    backgroundColor: "#F5FF66"}}>     
+    width: "400px" ,borderRadius: "9px", padding: "0.5em 0em", 
+    backgroundColor: "#F5FF66", height: "44px"}}>     
     
       <ListItem                               
         secondaryAction={
