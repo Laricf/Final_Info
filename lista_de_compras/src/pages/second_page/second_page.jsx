@@ -18,7 +18,7 @@ import { List } from '@mui/material';
 import BuyList from '../../components/BuyList';
 import Home_desk from "../../components/Home_2"
 
-<<<<<<< HEAD
+
 
 
 
@@ -28,46 +28,7 @@ import Home_desk from "../../components/Home_2"
 function App() {    
 
 
-=======
-function second_page() {    
 
-  const [values, setValues] = useState();  
-  
-
-  const handleChangeValues = (value) => {
-    setValues((prevValue) => ({
-      ...prevValue,
-      [value.target.name]: value.target.value,          
-    }));
-  };
-
-  const handleClickButtom = () => {    
-    Axios.post("http://localhost:3001/produto/insert", {
-      produto:values.produto,
-    }).then((response)=>{
-      console.log(response)
-    })
-    
-  }
-   
-  useEffect (() => {
-    axios.get("http://localhost:3001/produto/find")
-  })
-
-  const ClickDelete = () => {
-    Axios.post("http://localhost:3001/produto/delete", {
-      produto:values.produto,
-    }).then((response) => {
-      console.log(response)
-    })        
-  }
-
-  useEffect (() => {
-    axios.get("http://localhost:3001/produto/delete")
-  })     
-
-  
->>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
   return ( 
     <div className="App_2">
       <div className='mobile'><Mobile/></div>                  
@@ -106,16 +67,14 @@ function second_page() {
       <div className='lista_2' >
        <h1 className='texto_1'>SUA LISTA DE COMPRAS</h1>     
       </div>
-<<<<<<< HEAD
 
-=======
->>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
+
+
+
     </div>
   )
 }
 
-<<<<<<< HEAD
+
 export default App
-=======
-export default second_page
->>>>>>> f13ec403658c1c1fe340925d4f1549a3f0337db8
+
