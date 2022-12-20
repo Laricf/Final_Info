@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import './second.css';
 import '../../App.css'
-import * as yup from "yup"
-import Axios from 'axios';
-import { ConstructionOutlined } from '@mui/icons-material';
-import axios from 'axios';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import Mobile from '../mobile/Mobile'
+
+/*import Mobile from '../mobile/Mobile'*/
+import Mobile from '../../components/mobile/Mobile'
+
 
 import Form from '../../components/Form';
 import { Container} from '@mui/system';
@@ -14,14 +12,7 @@ import { List } from '@mui/material';
 import BuyList from '../../components/BuyList';
 import Home_desk from "../../components/Home_2"
 
-
-
-
-
-
-
 function App() {    
-
 
   return ( 
     <div className="App_2">
@@ -38,7 +29,7 @@ function App() {
             <p> <img src="./src/assets/comp.png" alt="Compartilhar" />  Compatilhar</p>
           </div>
         </div>
-        <div className='cabeca_segundo'>
+        <div className='cabeca_segundo' style={{}}>
           <div className='logo_direito'>
             <p id='suaLista'>SUA LISTA DE COMPRAS WEB  </p>
             <img id='listaVerde' src="./src/assets/lista.png" alt="Lista" />
@@ -66,4 +57,8 @@ function App() {
   )
 }
 
+
 export default App
+
+
+

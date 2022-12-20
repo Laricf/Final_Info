@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react'
 import Axios from 'axios';
 import { Button, Paper, TextField } from '@mui/material';
 import '../App.jsx';
+import Form from './Form_mobile';
 
 
-export default function FormY({ addTobuy, deleteTobuy }) {
+export default function Form({ addTobuy, deleteTobuy }) {
 
   const [values, setValues] = useState(); 
   const [id, setId]  = useState(0)
@@ -46,7 +47,7 @@ export default function FormY({ addTobuy, deleteTobuy }) {
             />
             <Button
             variant="text" 
-            onClick={() => tobuyCreate(values)}><img src="./imgs/botao.png" alt="botão de adicionar" /></Button>
+            onClick={() => tobuyCreate(values)}><img src="./imgs/botao.png" alt="botão de adicionar" /></Button> 
         </div>
       </Paper>    
   )

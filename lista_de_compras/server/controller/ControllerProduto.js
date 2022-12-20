@@ -9,7 +9,6 @@ var db = mysql.createPool({
     database: "bnd5dssud6aytjfy9grh",
     port: 3306
 })
-
 module.exports = {
     async insert(req, res){
         let datas = req.body
@@ -22,7 +21,7 @@ module.exports = {
         }
     },
 
-    async delete(req, res){
+    /*async delete(req, res){
         let datas = req.body.produto;
         
         console.log(datas)
@@ -32,7 +31,7 @@ module.exports = {
         } catch (error) {            
             console.log(error);
         }
-    },
+    },*/
 
     async find(req, res){        
         try {

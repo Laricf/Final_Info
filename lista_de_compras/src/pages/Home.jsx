@@ -32,16 +32,18 @@ export default function Home() {
     };
 
   return (
-    <Container /*maxWidth="xs"*/ style={{ marginTop: "1em", width: "45%"}}>        
-        <Form addTobuy={addTobuy}/>        
-        <List sx={{ marginTop: "1em"}}>
-            {tobuys.map((tobuy) => ( 
-                <div key={tobuy.id} style={{ marginTop: "1em" }}>
-                    <BuyList editTobuy={editTobuy} tobuy={tobuy} deleteTobuy={deleteTobuy}/>
-                </div>
-            ))}     
-            {/*<BuyList/> */}
-        </List>                 
+    <Container  style={{ margin: "auto", minWidth: "160px", maxWidth: "600px"}}>        
+        <div id='texto' style={{width: "40vw"}}>            
+            <Form addTobuy={addTobuy} />
+            <List sx={{ marginTop: "0%"}}>
+                {tobuys.map((tobuy) => (
+                    <div key={tobuy.id} style={{marginTop:"5em"}} >
+                        <BuyList editTobuy={editTobuy} tobuy={tobuy} deleteTobuy={deleteTobuy} />
+                    </div>
+                ))}
+                {/*<BuyList/> */}
+            </List>
+        </div>                
     </Container> 
   )
 }

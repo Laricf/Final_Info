@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import Form from '../components/Form';
 import { Container} from '@mui/system';
 import { List } from '@mui/material';
 import BuyList from '../components/BuyList';
 import '../App.css'
-import Form from '../pages/second_page/Form_second'
 
-export default function Home_2() {
+export default function Home() {
     
 
     const [tobuys, setTobuys] = useState([]);
@@ -32,13 +32,12 @@ export default function Home_2() {
     };
 
   return (
-    <Container /*maxWidth="xs"*/ style={{ margin: "auto", minWidth: "160px", maxWidth: "600px"}}>        
-        <div id='texto' style={{width: "40vw"}}>
-            <Form addTobuy={addTobuy}/>
-            <List className='caixa_produto' sx={{ marginTop: "30%"}} style={{  marginLeft: "-290px"}}>
+    <Container  style={{ margin: "auto", minWidth: "160px", maxWidth: "600px"}}>        
+        <div id='texto' style={{width: "40vw"}}>            
+            <Form addTobuy={addTobuy} />
+            <List sx={{ marginTop: "0%"}}>
                 {tobuys.map((tobuy) => (
                     <div key={tobuy.id} style={{marginTop:"5em"}} >
-                        <BuyList editTobuy={editTobuy} tobuy={tobuy} deleteTobuy={deleteTobuy}  />
                     </div>
                 ))}
                 {/*<BuyList/> */}
