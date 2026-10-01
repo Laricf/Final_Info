@@ -70,4 +70,4 @@ Bash
 npm run start
 (Nota: Certifique-se de que a porta configurada no index.js esteja livre para rodar o servidor Express).
 
-Desenvolvido por: Larissa Conrado de Figueiredo
+Desenvolvido por: Larissa Conrado de Figueiredo E Brunna Queiroz
